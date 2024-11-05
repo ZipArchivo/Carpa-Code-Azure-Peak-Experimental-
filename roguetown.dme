@@ -3593,6 +3593,7 @@
 #include "modular_azurepeak\statpacks\physical.dm"
 #include "modular_azurepeak\statpacks\wildcard.dm"
 #include "modular_carpa\code\game\objects\items\rogueitems\undies.dm"
+#include "modular_carpa\code\modules\jobs\job_types\roguetown\adventurer\types\combat\monk.dm"
 #include "modular_carpa\code\modules\mob\dead\new_player\sprite_accessory\underwear.dm"
 #include "modular_carpa\code\recipes\weapons.dm"
 #include "modular_carpa\code\weapons\blunt.dm"
