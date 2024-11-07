@@ -122,7 +122,7 @@
 	key = "bow"
 	key_third_person = "bows"
 	message = "hace una reverencia."
-	message_param = "se inclina ante %t haciendo una reverencia.."
+	message_param = "se inclina ante %t haciendo una reverencia."
 	restraint_check = TRUE
 	emote_type = EMOTE_VISIBLE
 
