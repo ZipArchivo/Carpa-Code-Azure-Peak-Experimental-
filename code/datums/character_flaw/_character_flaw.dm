@@ -18,7 +18,7 @@ GLOBAL_LIST_INIT(character_flaws, list(
 	"Cíclope (I)"=/datum/charflaw/noeyel,
 	"Brazo de Madera (D)"=/datum/charflaw/limbloss/arm_r,
 	"Brazo de Madera (I)"=/datum/charflaw/limbloss/arm_l,
-	"Defecto al azar o ninguno"=/datum/charflaw/randflaw,
+	"Aleatorio o Ninguno"=/datum/charflaw/randflaw,
 	"Sin Defecto (3 Triunfos)"=/datum/charflaw/noflaw
 	))
 
@@ -57,7 +57,7 @@ GLOBAL_LIST_INIT(character_flaws, list(
 
 /datum/charflaw/randflaw
 	name = "Aleatorio o Ninguno"
-	desc = "Un 50% de probabilidades de no tener ningun defecto, y otro 50% de tener uno aleatorio."
+	desc = "Un 50% de probabilidades de no tener ningún defecto, y otro 50% de tener uno aleatorio."
 	var/nochekk = TRUE
 
 /datum/charflaw/randflaw/flaw_on_life(mob/user)
@@ -350,7 +350,7 @@ GLOBAL_LIST_INIT(character_flaws, list(
 		if(ascending)
 			to_chat(user, span_warning("Solo [new_mammon_amount] mammons.. Necesito más..."))
 		else
-			to_chat(user, span_boldwarning("No! Mis preciosos mammons..."))
+			to_chat(user, span_boldwarning("¡No! Mis preciosos mammons..."))
 
 	last_checked_mammons = new_mammon_amount
 
