@@ -517,7 +517,6 @@
 
 /obj/effect/temp_visual/blade_burst
 	icon = 'icons/effects/effects.dmi'
-	@@ -508,22 +513,32 @@
 	desc = "Get out of the way!"
 	randomdir = FALSE
 	duration = 1 SECONDS

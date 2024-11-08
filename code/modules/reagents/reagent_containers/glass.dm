@@ -59,7 +59,6 @@
 				return
 			if(M != user)
 				M.visible_message(span_danger("[user] attempts to feed [M] something."), \
-	@@ -95,10 +71,18 @@
 							span_danger("[user] feeds you something."))
 				log_combat(user, M, "fed", reagents.log_list())
 			else
