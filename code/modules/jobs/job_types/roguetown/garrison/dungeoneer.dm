@@ -54,10 +54,10 @@
 		H.mind.adjust_skillrank(/datum/skill/craft/cooking, 1, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/sewing, 1, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/craft/traps, 3, TRUE)
-	H.change_stat("strength", 2)
+	H.change_stat("strength", 4)
 	H.change_stat("intelligence", -8)
-	H.change_stat("endurance", 1)
-	H.change_stat("constituion", 2)
+	H.change_stat("endurance", -2)
+	H.change_stat("constitution", 3)
 	H.dna.species.soundpack_m = new /datum/voicepack/male/warrior()
 	H.verbs |= /mob/living/carbon/human/proc/torture_victim
 	ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
