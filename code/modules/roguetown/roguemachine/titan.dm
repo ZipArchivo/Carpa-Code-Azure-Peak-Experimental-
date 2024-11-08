@@ -98,7 +98,7 @@ GLOBAL_LIST_INIT(laws_of_the_land, initialize_laws_of_the_land())
 				else
 					HC.dropItemToGround(I, TRUE) //If you're dead, forcedrop it, then move it.
 			I.forceMove(src.loc)
-			say("La corona ha sidoinvocada!")
+			say("La corona ha sido invocada!")
 			playsound(src, 'sound/misc/machinetalk.ogg', 100, FALSE, -1)
 			playsound(src, 'sound/misc/hiss.ogg', 100, FALSE, -1)
 	if(findtext(message, "invocar llave"))
@@ -131,7 +131,7 @@ GLOBAL_LIST_INIT(laws_of_the_land, initialize_laws_of_the_land())
 				else
 					HC.dropItemToGround(I, TRUE) //If you're dead, forcedrop it, then move it.
 			I.forceMove(src.loc)
-			say("La llave maestra ha sido invocada!")
+			say("La llave  maestra ha sido invocada!")
 			playsound(src, 'sound/misc/machinetalk.ogg', 100, FALSE, -1)
 			playsound(src, 'sound/misc/hiss.ogg', 100, FALSE, -1)
 	switch(mode)
@@ -244,7 +244,7 @@ GLOBAL_LIST_INIT(laws_of_the_land, initialize_laws_of_the_land())
 /obj/structure/roguemachine/titan/proc/give_tax_popup(mob/living/carbon/human/user)
 	if(!Adjacent(user))
 		return
-	var/newtax = input(user, "Set a new tax percentage (1-99)", src, SStreasury.tax_value*100) as null|num
+	var/newtax = input(user, "Establecer nuevo porcentaje de impuesto (1-99)", src, SStreasury.tax_value*100) as null|num
 	if(newtax)
 		if(!Adjacent(user))
 			return
@@ -253,6 +253,7 @@ GLOBAL_LIST_INIT(laws_of_the_land, initialize_laws_of_the_land())
 		newtax = CLAMP(newtax, 1, 99)
 		SStreasury.tax_value = newtax / 100
 		priority_announce("El nuevo impuesto en Azure Peak debera ser del [newtax] porciento.", "El Generoso Duque Establece", pick('sound/misc/royal_decree.ogg', 'sound/misc/royal_decree2.ogg'), "Captain")
+
 
 
 /obj/structure/roguemachine/titan/proc/make_announcement(mob/living/user, raw_message)
