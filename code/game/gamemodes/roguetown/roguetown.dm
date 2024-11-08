@@ -151,23 +151,23 @@ var/global/list/roguegamemodes = list("Rebellion", "Vampires and Werewolves", "E
 				if("Extended")
 					log_game("Major Antagonist: Extended")
 		return TRUE
-	if(num_players() >= 10) // Need at least a handful of people before we start throwing ne'er-do-wells into the mix.
+	if(num_players() >= 4) // Need at least a handful of people before we start throwing ne'er-do-wells into the mix.
 		var/major_roll = rand(1,100)
 		switch(major_roll)
-			/* rebels depend a little too much on the main players being exceedingly good roleplayers and lends itself to bad conduct too much to be spawning automatically
-			if(1 to 35)
+			 //rebels depend a little too much on the main players being exceedingly good roleplayers and lends itself to bad conduct too much to be spawning automatically
+			if(1 to 25)
 				pick_rebels()
 				log_game("Major Antagonist: Rebellion")
-			*/
-			if(1 to 33)
-				pick_bandits()
+
+			if(26 to 33)
+				//pick_bandits()
 				pick_aspirants()
-				log_game("Antagonists: Bandits & Aspirants")
+				log_game("Antagonists: Aspirants")
 			if(34 to 66)
-				//"pick_vampires() was removed from here, normally they spawn together
+				pick_vampires()
 				pick_werewolves()
-				pick_bandits()
-				log_game("Antagonists: Werewolves & Bandits")
+				//pick_bandits()
+				log_game("Antagonists: Werewolves & Vampires")
 			if(67 to 100)
 				pick_werewolves()
 				pick_aspirants()
@@ -178,16 +178,16 @@ var/global/list/roguegamemodes = list("Rebellion", "Vampires and Werewolves", "E
 			*/
 
 		 //removing the "minor antagonist" system as we currently need them as major antagonist gamemodes while waiting for our own custom antags
-		if(prob(45))
+		/*if(prob(45))
 			pick_bandits()
-			log_game("Minor Antagonist: Bandit")
+			log_game("Minor Antagonist: Bandit")*/
 		if(prob(45))
 			pick_aspirants()
 			log_game("Minor Antagonist: Aspirant")
 		if(prob(10))
 			pick_maniac()
 			log_game("Minor Antagonist: Maniac")
-		
+
 
 	return TRUE
 
@@ -297,7 +297,7 @@ var/global/list/roguegamemodes = list("Rebellion", "Vampires and Werewolves", "E
 
 /datum/game_mode/chaosmode/proc/pick_rebels()
 	restricted_jobs = list() //handled after picking
-	var/num_rebels = 0
+	var/num_rebels = 2
 	if(num_players() >= 10)
 		num_rebels = CLAMP(round(num_players() / 3), 1, 3)
 	if(num_rebels)
