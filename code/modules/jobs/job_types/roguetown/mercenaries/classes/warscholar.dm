@@ -160,18 +160,18 @@
 			gloves = /obj/item/clothing/gloves/roguetown/angle
 			backr = /obj/item/storage/backpack/rogue/satchel/black
 			head = /obj/item/clothing/head/roguetown/roguehood/shalal/black
-			cloak = /obj/item/clothing/cloak/half
+			cloak = /bj/item/clothing/cloak/half
+			if(H.pronouns == SHE_HER || H.pronouns == THEY_THEM_F)
+				shirt = /obj/item/clothing/suit/roguetown/armor/gambeson
+			else
+				shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/lord // FUCK YOU ZETH, WHY DOESN'T THE ARMING JACKET GET WOMEN SPRITES..
 			
 
 
 	
 	backpack_contents = list(/obj/item/roguekey/mercenary,/obj/item/rogueweapon/huntingknife)
 	
-	if(H.pronouns == SHE_HER || H.pronouns == THEY_THEM_F)
-				shirt = /obj/item/clothing/suit/roguetown/armor/gambeson
-			else
-				shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/lord // FUCK YOU ZETH, WHY DOESN'T THE ARMING JACKET GET WOMEN SPRITES..
-
+	
 /datum/outfit/job/roguetown/mercenary/warscholar/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	. = ..()
 
