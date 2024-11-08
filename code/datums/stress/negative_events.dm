@@ -115,7 +115,7 @@
 /datum/stressevent/virginchurch
 	timer = 999 MINUTES
 	stressadd = 10
-	desc = list(span_boldred("He roto mi juramento de castidad a los Dioses.!"),span_boldred("¡He quebrantado mi voto de castidad ante los dioses!"),span:boldred("¡He roto mi voto de castidad a los dioses!"),span:boldred("SOY UN SUCIO EREPERO"))
+	desc = list(span_boldred("He roto mi juramento de castidad a los Dioses.!"),span_boldred("¡He quebrantado mi voto de castidad ante los dioses!"),span_boldred("¡He roto mi voto de castidad a los dioses!"),span_boldred("SOY UN SUCIO EREPERO"))
 
 /datum/stressevent/badmeal
 	timer = 3 MINUTES

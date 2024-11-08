@@ -227,7 +227,7 @@ All foods are distributed among various categories. Use common sense.
 /obj/item/reagent_containers/food/snacks/proc/On_Consume(mob/living/eater)
 	if(!eater)
 		return
-
+/*
 var/apply_effect = TRUE
 	// check to see if what we're eating is appropriate fare for our "social class" (aka nobles shouldn't be eating sticks of butter you troglodytes)
 	if (ishuman(eater))
@@ -239,7 +239,7 @@ var/apply_effect = TRUE
 						eater.add_stress(/datum/stressevent/noble_ate_without_table) // look i just had to okay?
 						if (prob(25))
 							to_chat(eater, span_red("I should really eat this at a table..."))
-				switch (faretype)
+				/switch (faretype)
 					if (FARE_IMPOVERISHED)
 						eater.add_stress(/datum/stressevent/noble_impoverished_food)
 						to_chat(eater, span_red("This is disgusting... how can anyone eat this?"))
@@ -275,7 +275,7 @@ var/apply_effect = TRUE
 					if (FARE_POOR to FARE_LAVISH)
 						eater.remove_stress(/datum/stressevent/noble_bland_food)
 
-	if(eat_effect && apply_effect)
+	if(eat_effect && apply_effect)*/
 	if(eat_effect)
 		eater.apply_status_effect(eat_effect)
 	eater.taste(reagents)

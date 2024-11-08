@@ -46,7 +46,7 @@
 			qdel(src)
 			return BULLET_ACT_BLOCK
 		if(isliving(target))
-			vvar/mob/living/L = target
+			var/mob/living/L = target
 			if(L.STACON <= 14)
 				L.electrocute_act(3, src)
 			else

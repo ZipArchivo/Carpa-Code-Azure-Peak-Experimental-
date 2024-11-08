@@ -9,7 +9,7 @@
 	var/activecolor = "#FFFFFF"
 	/// Allow holder'd mobs
 	var/allow_mobs = TRUE
-// esto venia desactivado pero lo active porque xd esta chistoso poder pintar mas cosas, en realidad venia a agregar una variable ya la añadi pero eso los gringos anti fun quitan cosas y las vuevlo activar
+/* esto venia desactivado pero lo active porque xd esta chistoso poder pintar mas cosas, en realidad venia a agregar una variable ya la añadi pero eso los gringos anti fun quitan cosas y las vuevlo activar
 	var/list/allowed_types = list(
 			/obj/item/clothing/suit/roguetown/shirt/robe,
 			/obj/item/clothing/suit/roguetown/shirt/dress,
@@ -29,8 +29,8 @@
 			/obj/item/clothing/shoes/roguetown/simpleshoes,
 			/obj/item/clothing/suit/roguetown/armor/gambeson
 			)
-
-	//EVIL CODE !! (kans: cerra el orto gringo)
+*/
+	//EVIL CODE !! (kans: cerra el orto gringo) no pues si we estaba roto xd
 	var/list/allowed_types = list(
 			/obj/item/clothing,
 			/obj/item/storage,

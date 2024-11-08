@@ -6,7 +6,7 @@
 	outfit = /datum/outfit/job/roguetown/mercenary/warscholar
 	category_tags = list(CTAG_MERCENARY)
 	cmode_music = 'sound/music/warscholar.ogg'
-
+	
 /datum/outfit/job/roguetown/mercenary/warscholar
 	var/detailcolor
 	allowed_patrons = list(/datum/patron/old_god)
@@ -26,9 +26,6 @@
 		"PINK" = "#EDC1D5",
 		"MAROON" = "#5F1F34"
 	))
-/datum/outfit/job/roguetown/mercenary/warscholar/pre_equip(mob/living/carbon/human/H)
-	..()
-
 	// CLASS ARCHETYPES
 	H.adjust_blindness(-3)
 	detailcolor = input("Choose a color.", "NALEDIAN COLORPLEX") as anything in naledicolors
@@ -160,7 +157,6 @@
 			gloves = /obj/item/clothing/gloves/roguetown/angle
 			backr = /obj/item/storage/backpack/rogue/satchel/black
 			head = /obj/item/clothing/head/roguetown/roguehood/shalal/black
-			cloak = /bj/item/clothing/cloak/half
 			if(H.pronouns == SHE_HER || H.pronouns == THEY_THEM_F)
 				shirt = /obj/item/clothing/suit/roguetown/armor/gambeson
 			else

@@ -37,7 +37,7 @@
 		if("Azure")
 			shoes = /obj/item/clothing/shoes/roguetown/boots // Swaggier and more armored against uppity/bitey attendant
 			belt = /obj/item/storage/belt/rogue/leather/black
-			hirt = /obj/item/clothing/suit/roguetown/shirt/tunic/purple // Tunics are far swaggier than shirts
+			shirt = /obj/item/clothing/suit/roguetown/shirt/tunic/purple // Tunics are far swaggier than shirts
 			wrists = /obj/item/storage/keyring/nightman
 			neck = /obj/item/storage/belt/rogue/pouch/coins/mid
 			pants = /obj/item/clothing/under/roguetown/trou/leather
