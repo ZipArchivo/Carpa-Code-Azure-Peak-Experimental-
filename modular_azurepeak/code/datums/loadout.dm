@@ -43,10 +43,19 @@ GLOBAL_LIST_EMPTY(loadout_items)
 	name = "Buckled Hat"
 	path = /obj/item/clothing/head/roguetown/puritan
 
+/datum/loadout_item/folded_hat
+	name = "Folded Hat"
+	path = /obj/item/clothing/head/roguetown/bucklehat
+
+/datum/loadout_item/duelist_hat
+	name = "Duelist's Hat"
+	path = /obj/item/clothing/head/roguetown/duelhat
+
 //CLOAKS
 /datum/loadout_item/tabard
 	name = "Tabard"
 	path = /obj/item/clothing/cloak/tabard
+
 
 /datum/loadout_item/surcoat
 	name = "Surcoat"
@@ -187,6 +196,22 @@ GLOBAL_LIST_EMPTY(loadout_items)
 	name = "Feather"
 	path = /obj/item/natural/feather
 
+//UTILITY 
+/datum/loadout_item/star
+	name = "Throwing Star"
+	path = /obj/item/throwing_star/ninja
+
+/datum/loadout_item/healthpot
+	name = "Health Pot"
+	path = /obj/item/reagent_containers/glass/bottle/rogue/healthpot
+
+/datum/loadout_item/lantert
+	name = "Lantern"
+	path = /obj/item/flashlight/flare/torch/lantern
+
+/datum/loadout_item/cloth
+	name = "Cloth"
+	path = /obj/item/natural/cloth
 
 //carpa (para futuras cosas del lodout)
 
