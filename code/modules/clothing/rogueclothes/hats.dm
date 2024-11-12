@@ -1041,6 +1041,13 @@
 		wise.change_stat("intelligence", -2, "wisehat")
 		to_chat(wise, span_red("I lose wisdom."))
 
+// azure addition - random wizard hats
+
+/obj/item/clothing/head/roguetown/wizhat/random/Initialize()
+	icon_state = pick("wizardhatred", "wizardhatyellow", "wizardhatgreen", "wizardhat")
+	..()
+
+
 /obj/item/clothing/head/roguetown/witchhat
 	name = "witch hat"
 	desc = ""
@@ -1202,4 +1209,18 @@
 	icon_state = "monkhood"
 	item_state = "monkhood"
 	naledicolor = TRUE
+
+/obj/item/clothing/head/roguetown/bucklehat //lifeweb sprite
+	name = "folded hat"
+	desc = "A plain leather hat with decorative buckle. Made popular by the ne'er-do-wells of Etrusca."
+	icon_state = "bucklehat"
+	sewrepair = TRUE
+
+/obj/item/clothing/head/roguetown/duelhat //lifeweb sprite
+	name = "duelist's hat"
+	desc = "A feathered leather hat, to show them all your superiority."
+	icon_state = "duelhat"
+	sewrepair = TRUE
+
+
 
