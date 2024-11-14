@@ -4,77 +4,78 @@
 	desc = ""
 
 /datum/skill/craft/crafting
-	name = "Elaboracion"
+	name = "Manufactura"
 	desc = ""
 	dreams = list(
-		"...you feel grass under you feet as you peer onto a meadow, you prepare a campfire and a tent and drift off into deeper slumber...",
-		"...you dig through the mud for worms with a spade you made from wood gathered by the lakeside, and your fishing rod stands eager to bring you a meal, just like your grandfather taught you ..."
+		"...sientes la hierba en tus suelas mientras te asientas en un claro, preparas tu carpa y caes en las profundidades del letargo al calor de tu lumbre...",
+		"...buscas lombrices con una palita que hiciste de madera deriva, y tu caña de pescar te espera con ansias para que pesquéis la cena, justo como te enseñó el abuelo..."
 	)
 
 /datum/skill/craft/weaponsmithing
-	name = "Fabricacion De Armas"
+	name = "Armería: Ofensa"
 	dreams = list(
-		"...tempered in gold and void, sharpened only by the sun and moon, your creation is finally done. This one, this one will pierce the heavens...",
-		"...sweat drips down your forehead and you can't feel your arms, but it is finally finished. A blade of gold and metal, studded with rontz gems...",
-		"...an old hunter stands in front of your counter, and demands two dozen arrows. He hands you a bundle of sticks with a smile on his face..."
+		"...templada en oro y vacío, afilada tan solo por el sol y luna, tu obra maestra está terminada. Esta, esta atravesará los cielos...",
+		"...el sudor se aperla en tu frente y no sientes los brazos, pero al fin está terminada. Una hoja de acero y oro, engarzada con granate...",
+		"...la figura del viejo cazador impone en tu pequeña tienda, y su voz áspera demanda dos docenas de flechas. Te entrega un manojo de ramitas con una sonrisa..."
 	)
 
 /datum/skill/craft/armorsmithing
-	name = "Fabricacion De Armaduras"
+	name = "Armería: Defensa"
 	dreams = list(
-		"...you look unto the deadite horde and the weight of your armor fills you with safety and comfort, as if you were standing atop an untouchable spire. You made it, after all...",
-		"...the veteran before you looks battered and broken, but he would be dead without you many years ago. He hands you his shell, and with half a day's work, it is in better condition than the day it was made..."
+		"...diriges tu mirada a la horda de no muertos y el peso de tu armadura te llena de confianza y bravura, como si yacieras sobre una torre inalcanzable. Después de todo, tú la hiciste...",
+		"...el veterano frente a ti parece roto y maltratado, pero sin tu maestría, habría muerto hace muchos años. Te entrega su coraza, y ni tardas medio día en hacerla relucir como si fuera más que nueva..."
 	)
 
 /datum/skill/craft/blacksmithing
-	name = "Herreria"
+	name = "Herrería"
 	dreams = list(
-		"...you bow your head to the old master, who's scolding you for your wastefulness. You left the forges on all night with no one to tend them...",
-		"...you hammer away at a strange blue metal. It tempts you, begging to be formed into a crown of secrets...",
-		"...the furnaces are lit and the forges are roaring. Today is a good day, and the lord of flame has blessed your smithy, the greatest in all the lands..."
+		"...agachas la cabeza ante tu anciano maestro, que te regaña por derrochar. Dejaste prendidas la fragua toda la noche, sin atender...",
+		"...martillazo tras martillazo, el extraño metal azulezco te susurra. Te tienta, te ruega que lo moldees en la forma de una corona profana...",
+		"...los hornos arden y las fraguas rugen. Hoy es un buen día, y el señor de la flama sonríe su calor sobre tu herrería, la mejor en leguas..."
 	)
 
 /datum/skill/craft/smelting
-	name = "Fundicion"
+	name = "Metalurgia"
 	dream_cost_base = 1
 
 /datum/skill/craft/carpentry
-	name = "Carpinteria"
+	name = "Carpintería"
 	dreams = list(
-		"...with a precise stroke, you bring down the hammer, nailing another peg into place. Your art turns mere wood into shelter and comfort...",
-		"...you take a seat, and there is no noise, none at all. Echos of a horrid creaking leave your mind, and you wonder if you are seated in a chair of mahogany, oak, cedar or perhaps even pine..."
+		"...con un movimiento preciso, cae el martillo sobre el clavo. Tu arte es hacer hogares a partir de mera madera...",
+		"...y al sentarte, no escuchas nada, nada en absoluto. Los recuerdos de los chirridos que solía hacer abandonan tu mente, y te preguntas si un asiento de roble, pino o abedul vendería mejor..."
 	)
 
 /datum/skill/craft/masonry
 	name = "Albañileria"
 	dreams = list(
-		"...a fortress. Impenetrable. Everlasting. Brick by brick. Layer by layer. Stone upon stone. This is your magnum opus. This is the way of creation...",
-		"...'3, 4 and 5, lead to the corner of 90.' your master, a wizened old elf adrift a void, shows you how their mason's square indicates straight and strange corners alike..."
+		"...una fortaleza. Impenetrable. Eterna. Ladrillo sobre ladrillo, capa sobre capa, piedra sobre piedra, esta es tu obra maestra, el arte de la creación...",
+		"...tres, cuatro, cinco, dan a un ángulo de noventa. Tu maestro, un venerable elfo suspendido en un abismo, te enseña cómo sus herramientas de medida indican ángulos tanto rectos como exóticos..."
 	)
 
 /datum/skill/craft/traps
-	name = "Frabricacion De Trampas"
+	name = "Trampeo"
 	dreams = list(
-		"... you spin a quiet silver wire across a hallway, and it lies in wait for it's prey. The pale volf approaches, and this time, you are prepared..."
+		"...el fino hilo plateado atravesando el pasadizo espera su presa. Se acerca la pálida bestia, y esta vez, te preparaste...",
+		"...cabeceando, te despiertas por un impacto carnoso seguido de un grito ahogado. Sonríes. Bandidos a tus puertas, que no miran donde pisan..."
 	)
 
 /datum/skill/craft/cooking
-	name = "Cocinar"
+	name = "Gastronomía"
 	dreams = list(
-		"...your knife bears down onto a wheel of cheese, and you cut away at the imperfections that lie on it's skin. Next would be the eggs and the dough, and they'll roll together into a wonderful meal...",
-		"...an one-eyed chef begins mushing apples in front of you, before filling some pie dough. He can barely stop himself from salivating as he teaches you his secret ingredient..."
+		"...tu hoja corta la corteza del queso, tallando sus imperfecciones quirúrgicamente. Ahora tocan los huevos y la masa, de los que harás un festín...",
+		"...un cocinero tuerto muele manzanas enfrente tuyo, antes de usarlas para llenar una tarta. Apenas puede resistir probar su mezcla mientras te revela su receta secreta..."
 	)
 
 /datum/skill/craft/engineering
-	name = "Ingenieria"
+	name = "Ingeniería"
 	dreams = list(
-		"...strange devices are familiar faces to you. The inner workings of your machines are of cogs. Cogs are their hearts, their mind and their will...",
-		"...three levers lay before you. One will drop you into acid and another will release toxic gas, but only one will free you. The moonlight shines on one of them, and you reach out..."
+		"...y pocos artilugios escapan tu conocimiento. Tus máquinas van a engranajes; son engranajes sus corazones, mentes, almas...",
+		"...tres palancas yacen enfrente tuyo, amenazantes. Una te dejará en caída libre hacia ácido y otra soltará gases ponzoñosos, pero la última te liberará. La luna brilla sobre una de ellas; tragas saliva, y estiras la mano..."
 	)
 
 /datum/skill/craft/tanning
-	name = "Artesania Con Pieles"
+	name = "Curtiduría"
 	dreams = list(
-		"...your knife scrapes away at skin and flesh and fat, cleaning up the piece of hide so that it may be made into a wonderful cloak for the lord...",
-		"...the hunter with a voice like bark and skin like rough grain lets out a hearty laugh as he shows you his stitching..."
+		"...tu cuchillo raspa piel, carne y grasa. Una preciosa piel, que será una preciosa capa para el querido monarca...",
+		"...la cazadora de voz como lija y piel como trigo ríe a carcajadas al ver tu trabajo sobre las pieles, y te llama la atención para enseñarte el método..."
 	)

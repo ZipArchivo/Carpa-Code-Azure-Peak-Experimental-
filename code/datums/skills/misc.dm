@@ -6,84 +6,84 @@
 /datum/skill/misc/alchemy
 	name = "Alquimia"
 	dreams = list(
-		"...your mind spins as the great tome before you unfurls. One part in two hundred and fifty is salt, and it can be extracted from the flesh with a bit of ash. You pick up the pestle...",
-		"...a wizened man finishes a blue liquid from a bottle, letting out a satisfied burp, 'A bottle of blue can sate your manna twice; once when emptied, and when filled with alchemist's spice.' He sets about grinding sulfurous into the bottle, and wraps it in cloth..."
+		"...la cabeza te da más y más vueltas con cada nueva página del venerable tomo. Una ducentésima quincuagésima parte de la carne es sal, y se puede extraer, con algo de ceniza... te levantas, y buscas tu mortero...",
+		"...el anciano eructa de manera desagradable tras bajar el líquido azul a fondo. Luego, habla. 'Una botella de azul te dará su manna de dual manera; una al vaciarla, otra al llenarla de esencia alquímica.' Muele más sulfuro, y lo envuelve en tela..."
 	)
 
 /datum/skill/misc/athletics
 	name = "Atletismo"
 	dreams = list(
-		"...your lungs burn and you can no longer feel your breath as the pale volf's howling grows distant. You feel as though you should have collapsed three times over, but the urge to live pushes on your bodily limits...",
-		"...you are on a slope, and it is no more than that, simply an inclined surface for you to toil upon as you shove the barrel upwards. But you know that this slope is a mountain, and you shall conquer it..."
+		"...te arden los pulmones y el corazón te explota contra las costillas mientras los aullidos lentamente se alejan. Sientes que debiste haber colapsado ya tres veces, pero la imperativa de sobrevivir es demasiado fuerte...",
+		"...esta inclinación no es más que eso, un pequeño obstáculo, una dificultad en tu labor de subir barriles. Pero sabes en tu corazón que es más que eso, es una montaña que conquistar..."
 	)
 
 /datum/skill/misc/climbing
 	name = "Escalada"
 	dreams = list(
-		"...your elbows are scraped and your hands calloused, but you have a firm hold on the rock wall. With a deep breath and a lurch, you grip upwards, reaching for the next handhold. Your foot slips, and you begin falling, an endless lurching into the void, your heart pounding rapidly...",
-		"...the meadows are shining green, and the sun is behind a covering of clouds. Your childhood friend taunts you, his white toothed grin matching his pale eyes, before dashing up a tree. You clamber after him, and make your way upwards..."
+		"...tus codos están raspados y tus manos plenas de ampollas, pero tu agarre en la pared no flaquea. Tras una respiración profunda, pegas un salto hacia arriba, buscando el siguiente saliente... y fallas, precipitándote a un vacío insondable, tu corazón reventando a mil en anticipación...",
+		"...la pradera es de un verde intenso, opacado bajo la luz pálida de un día nublado. Tu amistad de infancia se burla de ti con una sonrisa llena de agujeros antes de subir un árbol en un abrir y cerrar de ojos. Le persigues..."
 	)
 
 /datum/skill/misc/reading
 	name = "Lectura"
 	dreams = list(
-		"...amidst the void, strange symbols and glyphs make their way into your mind. They re-arrange themselves unceasingly, indecipherable truths speaking in silent voices. The clouds part, and they fall still within the moonlight. The meaning of the gift is revealed...",
-		"...you cut into your meal, juices leaking from the edges of the book. Your mind expands throughout your meal, and you are about halfway through the meal when an old, bearded chef asks you how you like his specialty..."
+		"...en la noche cerrada, lo único que ves y sientes son los extraños símbolos y runas invadiendo tu mente. Danzan, se mezclan, se desarman y se rearman; verdades indescifrables en voces mudas. De repente, las nubes se abren y permiten algo de luz lunar, y todo parece revelarse tan obviamente...",
+		"...los símbolos, irreconocibles en principio, lentamente se vuelven familiares mientras los balbuceas en voz alta. Intentas recordar lo que te enseñó mamá..."
 	)
 
 /datum/skill/misc/swimming
-	name = "Natacion"
+	name = "Natación"
 	dreams = list(
-		"...there is no light in the suffocating dark. You choose a direction and your arms tear at the thick, oily waters in a desperate attempt to reach the surface. Your heart pounds, and your body yearns for another breath...",
-		"...a wave rocks to the side of the boat, and you slip off and out into yawning abyss. Lightning roars, and the old captain throws a buoy into the seas. Against your volition, your lungs begin to fill with salt-water as you row and row, making your way towards your lifeline..."
+		"...en la oscuridad sofocante, solo hay muerte. Eliges una dirección al azar y tiras un manoteo desesperado, en un intento poco fructuoso de escapar tu destino. Te arde el corazón, y los pulmones te gritan por aire...",
+		"...un momento de descuido, una ola, desequilibrio, y caes por la borda. Bajo los rugidos furiosos de la tormenta, tu tripulación intenta salvarte desesperadamente; el salvavidas justo afuera de tu alcance burlándose mientras tus pulmones se llenan de agua salada..."
 	)
 
 /datum/skill/misc/stealing
-	name = "Carterista"
+	name = "Hurto"
 	dreams = list(
-		"...one moment you are standing in line for the smith, waiting behind the captain of the guard. The next moment, you are standing in line at the merchant's, behind a travelling noble. Moments later, cries of a thief echo throughout town, while you count out hundreds of mammon...",
-		"...a piss-stinking, wooden-armed beggar with a lice-filled, greyed beard hails you, a rotten-toothed smile on his face, 'Spare a zenny for the wretched?' You step away from the disease-bearer, and as you turn around, you feel strangely light about the waist. With a double-take, you see your empty pouch, and two wooden arms left upon the floor where he had once seated..."
+		"...en un momento, esperas pacientemente en la fila de la herrería detrás del capitán de la guardia. En otro, en la muchedumbre enfrente de la tienda del mercader, cómodamente al lado del noble extranjero. Para cuando empiezan los gritos airados denunciando robos, ya estás en tu refugio, contando pilas de monedas...",
+		"...un pordiosero pestilente de brazos de madera y barba piojosa te saluda con una sonrisa de dientes podridos. '¿Una monedita para los marginales?' Con cara de asco, le das la espalda al enfermizo ser, notando demasiado tarde lo ligero que estaba tu cinto y lo dudoso de sus brazos falsos..."
 	)
 
 /datum/skill/misc/sneaking
 	name = "Sigilo"
 	dreams = list(
-		"...the four connected, orthogonally facing houses have a small dip at the center of their slanted rooftops. Your crow's nest. Your safe haven. The only light that can reach you here is what Noc takes from Astrata, and this night is particularly veiled. It's concealing and comforting, safe from the town guard, as you curl up to rest...",
-		"...The pale volf gets on it's hindlegs, and howls unto the moon. It seeks prey, and you happen to be unfortunate enough to be in it's forest. This is the third time it circled you, as you press yourself tighter into the hollow tree, completely still..."
+		"...estos cuatro tejados conectados forman una pequeña depresión en el centro. Tu nido, tu refugio; la única luz que allí te alcanza es la que Noc presta de Astrata, y hoy, la noche está cerrada como cortinas negras. A salvo de la guardia, te acurrucas...",
+		"...el lobo hambriento aúlla a la luna. Busca presa, y desafortunadamente, estás en su bosque. Quedará hambriento, sin embargo; te huele, pero no te verá en mil años, con el cuerpo así de pegado al follaje..."
 	)
 
 /datum/skill/misc/lockpicking
-	name = "Forzar Cerraduras"
+	name = "Cerrajería"
 
 /datum/skill/misc/riding
-	name = "Cabalgar"
+	name = "Equitación"
 	dreams = list(
-		"...the bog becomes more tolerable when it is not your foot that has to tread upon it. It took some coin, but your travels are much smoother atop your trustworthy steed...",
-		"...the landsknecht pokes their pole-arm at your steed, and it bucks wildly. Lurching forwards, you interpose your shield to the weapon, and feel your balance shift. Flexing every muscle in your core and legs, you manage to remain mounted..."
+		"...el pantano es mucho más tolerable cuando no son tus pies los que deben pisarlo. Costó un precio considerable, pero tu confiable corcel mejora todos tus viajes...",
+		"...el piquero pincha tu montura con su astil, y casi te tumba, corcel y todo; si no hubieras deflectado el siguiente golpe con tu escudo, no habrías recuperado equilibrio; y sería tu fin, y el de tu fiel animal..."
 	)
 
 /datum/skill/misc/music
-	name = "Musica"
+	name = "Música"
 	dreams = list(
-		"...offstage you worry and sweat. Onstage you are calm as a windless winter night. Curiosity draws your audience closer to you, as you began to sing...",
-		"...you raise your hands to the strings and draw your crowds attention unto yourself. The music comes easily out of you, and your like is like a second voice...",
-		"...your audience moves under the music like grass against the wind. You sing the song of the first coming of the comet, and you sing it loudly and proudly in a boisterous voice...",
-		"... the bonfire's heat causes sweat to drip down your face. The beat of your drums is only matched by the sheer enthusiasm of your crowd. You lost track of whether they chant in unison to your drums, or if their rally is commanded by your palms upon the velum-spanned instrument. The beat of your drum and the beat of their hearts are one tonight..."
+		"...sudas y tiemblas detrás del telón, pero en el escenario nada puede perturbarte, en serenidad constante como el frío invernal. Tu voz armónica pica la curiosidad de la multitud; más y más se suman...",
+		"...diez dedos largos y flacos tocan las teclas del órgano. La música sale de tus manos como una segunda voz, cautivando a la muchedumbre...",
+		"...tu audiencia se balancea en un vaivén al ritmo de la música, como la brisa moviendo hierba. Llega tu momento; cantas la canción de la primera llegada del cometa, en un tono fuerte y orgulloso...",
+		"...el calor de la fogata te empapa la frente; y lo único que se compara a su brillo es el entusiasmo de la fiesta que animas con tus tambores. No está claro de si guían tu tambor con sus voces, o si guías sus almas con tus manos; el latido de sus corazones y tus fieros golpes rítmicos se mezclan esta noche..."
 	)
 
 /datum/skill/misc/medicine
 	name = "Medicina"
 	dream_cost_base = 3
 	dreams = list(
-		"...the beak-masked doctor pulls and tugs and slices at another mass of strange flesh within the elven corpse, 'The appendix. Longer in this species of kin than others, as their forest-dwelling habitats cause them to digest more plantmatter'...",
-		"...you are amidst seven other students, and two doctors stand before you, both clad in obscuring robes. The only difference between them is their masks. One of an owl, wise and flat, the other of a crow, inquisitive and sharp. The crow speaks of the usage of the tools...",
-		"...a maskless void drags a corpse veil unto the center of the theater. The crow hands them a single coin, and the faceless one departs. The lesson commences, and the owl pulls apart the layers of the torso like a morbid curtain; the skin parts, and then the thick layer of fat, revealing the liver, heart, stomach and other actors...",
-		"...a wave of queasiness goes through one of the other students, and she has to be pulled apart before she faints. You steel yourself, and look at the voidlike ribcage in the torso before you. Well-preserved chunks of flesh lie beside it for your gloved hands to put back in their just place..."
+		"...el doctor de máscara de ave corta, tira y extrae otro bulto de carne extraña del elfo caído. 'El apéndice. Más largo en esta estirpe que en otras, ya que sus hogares forestales la lleva a digerir más materia vegetal, mhm...'",
+		"...te encuentras entre otros siete estudiantes enfrente de dos doctores, en túnica y encapuchados. Lo único que les diferencia son sus máscaras; uno es la sabia lechuza, y otro el avispado cuervo, que empieza a hablar de instrumentos quirúrgicos...",
+		"...otro extraño encapuchado arrastra un cadáver cubierto al centro del teatro. El cuervo le entrega una sola moneda, y la lección comienza. La lechuza desarma las capas del torso como una costurera experta; abre la piel, la grasa y revela el hígado, corazón y otros actores esenciales...",
+		"...una colega, otra estudiante, debe excusarse para vomitar afuera. Tu estómago es más fuerte; de expresión vacía, te aproximas al pozo de órganos que solía ser una cavidad toráxica. A su lado, hay porciones de carne cuidadosamente preservadas, esperando que tus manos enguantadas las recoloquen como piezas de rompecabezas..."
 	)
 
 /datum/skill/misc/sewing
-	name = "Coser"
+	name = "Costurería"
 	dreams = list(
-		"...as the years go by, the mantra becomes more and more opressive. Stitch, sew, cut ties, stitch, sew, thread the needle twice...",
-		"...you turn over the fabric, and within the two layers of the gown, you hide a secret. your stiched initials, for no one to ever lay eyes upon but you. A curse in some cultures. You never liked the bride much..."
+		"...con cada año que pasa, el mantra se siente menos entretenido y más representativo de tu desagradecido labor. Pincha, cose, corta, pincha, cose, dos vueltas a la aguja...",
+		"...das vuelta el velo, y entre dos capas de tela escondes un secreto: tus iniciales. En algunas culturas, una maldición. Nunca te cayó bien la afortunada novia..."
 	)

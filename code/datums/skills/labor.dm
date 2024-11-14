@@ -6,37 +6,37 @@
 /datum/skill/labor/farming
 	name = "Agricultura"
 	dreams = list(
-		"...the smell of dung was once revolting, but it has started smelling like opportunity. The soil is hungry, so you get your hands dirty...",
-		"...you scrape and plow and your muscles ache. The day was long, and soon, the apples you plucked today would be rolled into a delicious pie..."
+		"...el estiércol solía darte arcadas, pero hoy en día, sabes que su aroma es aquel de la oportunidad. Tus campos piden nutrición, habrá que ensuciarse las manos...",
+		"...aras, mules y trabajas. Tus músculos arden. El día fue largo, pero las manzanas que cosechaste pronto irán a una deliciosa tarta..."
 	)
 
 /datum/skill/labor/mining
-	name = "Minar"
+	name = "Minería"
 	dreams = list(
-		"...rock crumbles and the wall before you gives way, your pickaxe battered and broken from the long day. You mined into a strangely well lit cavern...",
-		"...the red, gleaming light seeps from the ancient stone, next to it's guardian. A bearded hermit of short stature, who riddles you on the strongest of steels...",
-		"...the dwarven master riddles you, 'The strongest metal is the goal; I am harvested from mountains to shoal, yet I am not a metal,' the ancient miner chokes on the ill-air of the underworld, before continuing...",
-		"...the gemstone gleamers in his grasp, as the old dwarf chokes out, 'I must be forged in fourths. What am I?'...",
-		"...and then the answer to his riddle comes to you, as if it was there all along. A lump of coal. With a satisfied smile, the dwarf hands you the heart of the mountain..."
+		"...caen escombros y el muro enfrente tuyo sucumbe junto a tu pico, hecho polvo tras otra larga jornada. Pareces haber abierto una entrada a una caverna inesperadamente iluminada...",
+		"...y la antigua roca emana una luz roja antinatural sobre su guardián. Este, un ermitaño barbudo de baja estatura, te hace responder acertijos sobre el metal más fuerte...",
+		"...el enano anciano suelta su acertijo: 'El metal más fuerte es la misión; me minan desde montañas a la más plana región, pero un metal no soy; más de fogón...' el minero se atraganta con el aire sucio de la mina antes de continuar...",
+		"...con la gema brillando en su mano, el viejo enano tose otro acertijo: 'Cuatro veces paso por la forja con cuatro caras. ¿Quién soy?'...",
+		"...entonces, la respuesta viene a ti, como si hubiera estado siempre presente pero justo fuera de tu alcance. La respuesta al acertijo es el carbón. Con una sonrisa satisfecha, el cansado enano te entrega el corazón de la montaña..."
 	)
 
 /datum/skill/labor/fishing
-	name = "Pescar"
+	name = "Pesca"
 	dreams = list(
-		"...you struggle to unknot the fishing line for what feels like hours, pulling away at it on a small boat amidst a chasmic void. A gigantic, calloused, pale hand takes it from you and untangles the whole thing with a singular push...",
-		"...the old merchant nods his head, and gives you a small sack of baits. Worms and grubs and even slices of cheese, each supposed to bring you another of Abyssor's bounties..."
+		"...peleas contra el nudo en tu sedal por lo que se siente como horas, tirando para un lado y para el otro en tu pequeño bote a la deriva de un abismo insondable. Una gigantesca mano pálida se manifiesta y te lo arrebata, desatándolo en segundos...",
+		"...el mercader asiente, y te da los cebos que ordenaste. Gusanos, larvas y hasta pedacitos de queso, cada uno preparado con el propósito de entregarte otro de los regalos de Abyssor..."
 	)
 
 /datum/skill/labor/butchering
-	name = "Carniceria"
+	name = "Carnicería"
 	dreams = list(
-		"...someone you recognize as a father twists the neck of the family rooster. He keeps you captivated as he guts it, speaking of gore and frugality...",
-		"...your hands are bloodied, and as you wipe them on your butcher's apron, a bell rings. A hooded customer enters your butcher's shop, and asks what meats you have for sale with a bemused look at your bloodied attire..."
+		"...alguien que reconoces como un padre retuerce el cuello del gallo familiar. Observas en cautivación disociada mientras lo despluma y habla sobre entrañas y agradecimiento a los dioses...",
+		"...de manos ensangrentadas, poco tiempo tienes para limpiártelas antes de tener que atender otro cliente. La figura encapuchada observa pasmada tu atuendo manchado de tripas antes de preguntar sobre la carne de hoy..."
 	)
 
 /datum/skill/labor/lumberjacking
-	name = "Leñador"
+	name = "Serrería"
 	dreams = list(
-		"...splinters fly off as a tree falls down on the ground, sending a thundering boom throughout the forest...",
-		"...you pull on a saw, before the bearded lumberjack across from you pulls back at it. The great oak yawns, as it threatens to topple over..."
+		"...cubres tus ojos para protegerte de las astillas del árbol colapsante. La fuerza de su impacto calla el bosque, por unos segundos...",
+		"...tiras de la sierra, y tu brusca compañera del otro lado del roble responde con el mismo movimiento para su lado. El gran roble se queja en crujidos, amenazando caer..."
 	)
