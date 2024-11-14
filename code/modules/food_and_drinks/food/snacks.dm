@@ -227,8 +227,8 @@ All foods are distributed among various categories. Use common sense.
 /obj/item/reagent_containers/food/snacks/proc/On_Consume(mob/living/eater)
 	if(!eater)
 		return
-/*
-var/apply_effect = TRUE
+
+	var/apply_effect = TRUE
 	// check to see if what we're eating is appropriate fare for our "social class" (aka nobles shouldn't be eating sticks of butter you troglodytes)
 	if (ishuman(eater))
 		var/mob/living/carbon/human/human_eater = eater
@@ -239,13 +239,13 @@ var/apply_effect = TRUE
 						eater.add_stress(/datum/stressevent/noble_ate_without_table) // look i just had to okay?
 						if (prob(25))
 							to_chat(eater, span_red("I should really eat this at a table..."))
-				/switch (faretype)
+				switch (faretype)
 					if (FARE_IMPOVERISHED)
 						eater.add_stress(/datum/stressevent/noble_impoverished_food)
 						to_chat(eater, span_red("This is disgusting... how can anyone eat this?"))
 						if (eater.nutrition >= NUTRITION_LEVEL_STARVING)
 							eater.taste(reagents)
-							human_eater.add_nausea(150)
+							human_eater.add_nausea(34)
 							return
 						else
 							if (eater.has_stress_event(/datum/stressevent/noble_impoverished_food))
@@ -263,7 +263,7 @@ var/apply_effect = TRUE
 						eater.add_stress(/datum/stressevent/noble_lavish_food)
 						if (prob(25))
 							to_chat(eater, span_green("Ah, food fit for my title."))
-
+			
 			// yeomen and courtiers are also used to a better quality of life but are way less picky
 			if (human_eater.is_yeoman() || human_eater.is_courtier())
 				switch (faretype)
@@ -275,8 +275,7 @@ var/apply_effect = TRUE
 					if (FARE_POOR to FARE_LAVISH)
 						eater.remove_stress(/datum/stressevent/noble_bland_food)
 
-	if(eat_effect && apply_effect)*/
-	if(eat_effect)
+	if(eat_effect && apply_effect)
 		eater.apply_status_effect(eat_effect)
 	eater.taste(reagents)
 
