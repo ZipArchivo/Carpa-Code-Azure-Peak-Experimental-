@@ -252,8 +252,8 @@
 	desc = list(span_red("He malgastado mi vida en esa puta caja."),span_red("Maldita seas, caja!."),span_red("Perdi mi tiempo en esa caja tonta... Maldita caja de bufon."),span_red("Desperdicie mi tiempo en esa caja estupida."),span_red("He desperdiciado mi tiempo en esa caja de mierda"))
 	timer = 5 MINUTES
 
-datum/stressevent/noble_impoverished_food
-	stressadd = 3
+/datum/stressevent/noble_impoverished_food
+	stressadd = 2
 	desc = span_boldred("Que repugnante. ¿Quién sería capaz de comer esto...?")
 	timer = 10 MINUTES
 
@@ -263,7 +263,7 @@ datum/stressevent/noble_impoverished_food
 	timer = 60 MINUTES
 
 /datum/stressevent/noble_bland_food
-	stressadd = 2
+	stressadd = 1
 	desc = span_red("Esta comida es realmente insipida, no esta a mi nivel. Yo merezco algo mejor...")
 	timer = 5 MINUTES
 
