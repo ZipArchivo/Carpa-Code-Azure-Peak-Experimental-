@@ -313,11 +313,11 @@
 	//TODO add some bar hud or something, i think i seen a request like that somewhere
 	if(known_skills[S] >= old_level)
 		if(known_skills[S] > old_level)
-			to_chat(current, span_nicegreen("My [S.name] grows to [SSskills.level_names[known_skills[S]]]!"))
+			to_chat(current, span_nicegreen("Mi habilidad de [S.name] ha subido a [SSskills.level_names[known_skills[S]]]!"))
 		if(skill == /datum/skill/magic/arcane)
 			adjust_spellpoints(1)
 	else
-		to_chat(current, span_warning("My [S.name] has weakened to [SSskills.level_names[known_skills[S]]]!"))
+		to_chat(current, span_warning("Mi habilidad de [S.name] ha subido a [SSskills.level_names[known_skills[S]]]!"))
 
 /datum/mind/proc/adjust_skillrank_up_to(skill, amt, silent = FALSE)
 	var/proper_amt = amt - get_skill_level(skill)

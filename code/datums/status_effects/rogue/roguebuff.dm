@@ -251,7 +251,7 @@
 		owner.remove_status_effect(/datum/status_effect/buff/guardbuffone)
 
 /atom/movable/screen/alert/status_effect/buff/healing
-	name = "Milago De La Curacion!"
+	name = "Milagro De La Curacion!"
 	desc = "La intervencion divina me cura de mis males."
 	icon_state = "buff"
 
