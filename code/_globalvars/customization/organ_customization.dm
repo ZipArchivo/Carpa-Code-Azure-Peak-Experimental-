@@ -1,13 +1,13 @@
 GLOBAL_LIST_INIT(named_penis_sizes, list(
-	"Small" = 1,
+	//"Small" = 1,
 	"Average" = 2,
-	"Large" = 3,
+	//"Large" = 3,
 ))
 
 GLOBAL_LIST_INIT(named_ball_sizes, list(
-	"Small" = 1,
+	//"Small" = 1,
 	"Average" = 2,
-	"Large" = 3,
+	//"Large" = 3,
 ))
 
 GLOBAL_LIST_INIT(named_breast_sizes, list(

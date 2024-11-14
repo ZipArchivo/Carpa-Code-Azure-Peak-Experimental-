@@ -445,7 +445,7 @@ GLOBAL_VAR_INIT(mobids, 1)
 		var/target = "[A]"
 		if(!isturf(A))
 			if(A == src)
-				message = "[src] mira por encima de"
+				message = "[src] mira por encima de "
 				target = "si mismo"
 			else if(A.loc == src)
 				target = "[src.p_their()] [A.name]"
