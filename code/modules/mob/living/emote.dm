@@ -122,7 +122,7 @@
 	key = "bow"
 	key_third_person = "bows"
 	message = "hace una reverencia."
-	message_param = "se inclina ante %t haciendo una reverencia.."
+	message_param = "se inclina ante %t haciendo una reverencia."
 	restraint_check = TRUE
 	emote_type = EMOTE_VISIBLE
 
@@ -1092,6 +1092,20 @@
 	message = "se agita!"
 	stat_allowed = UNCONSCIOUS
 	mob_type_ignore_stat_typecache = list(/mob/living/carbon/human)
+
+/datum/emote/living/warcry
+	key = "warcry"
+	key_third_person = "warcrys"
+	message = "Deja escapar un grito de batalla inspirador!"
+	emote_type = EMOTE_AUDIBLE
+	message_muffled = "hace un grito ahogado!"
+	show_runechat = FALSE
+
+/mob/living/carbon/human/verb/emote_warcry()
+	set name = "Warcry"
+	set category = "Noises"
+
+	emote("warcry", intentional = TRUE)
 
 /datum/emote/living/wave
 	key = "wave"

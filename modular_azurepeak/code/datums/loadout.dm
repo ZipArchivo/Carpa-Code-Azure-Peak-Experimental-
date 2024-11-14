@@ -43,10 +43,19 @@ GLOBAL_LIST_EMPTY(loadout_items)
 	name = "Buckled Hat"
 	path = /obj/item/clothing/head/roguetown/puritan
 
+/datum/loadout_item/folded_hat
+	name = "Folded Hat"
+	path = /obj/item/clothing/head/roguetown/bucklehat
+
+/datum/loadout_item/duelist_hat
+	name = "Duelist's Hat"
+	path = /obj/item/clothing/head/roguetown/duelhat
+
 //CLOAKS
 /datum/loadout_item/tabard
 	name = "Tabard"
 	path = /obj/item/clothing/cloak/tabard
+
 
 /datum/loadout_item/surcoat
 	name = "Surcoat"
@@ -72,6 +81,13 @@ GLOBAL_LIST_EMPTY(loadout_items)
 	name = "Rain Cloak"
 	path = /obj/item/clothing/cloak/raincloak
 
+/datum/loadout_item/direcloak
+	name = "direbear cloak"
+	path = /obj/item/clothing/cloak/darkcloak/bear
+
+/datum/loadout_item/lightdirecloak
+	name = "light direbear cloak"
+	path = /obj/item/clothing/cloak/darkcloak/bear/light
 
 //SHOES
 /datum/loadout_item/darkboots
@@ -127,7 +143,7 @@ GLOBAL_LIST_EMPTY(loadout_items)
 	name = "Strapless Dress"
 	path = /obj/item/clothing/suit/roguetown/shirt/dress/gen/strapless
 
-/datum/loadout_item/straplessdress
+/datum/loadout_item/straplessdress/alt
 	name = "Strapless Dress, alt"
 	path = /obj/item/clothing/suit/roguetown/shirt/dress/gen/strapless/alt
 
@@ -179,3 +195,23 @@ GLOBAL_LIST_EMPTY(loadout_items)
 /datum/loadout_item/feather
 	name = "Feather"
 	path = /obj/item/natural/feather
+
+//UTILITY 
+/datum/loadout_item/star
+	name = "Throwing Star"
+	path = /obj/item/throwing_star/ninja
+
+/datum/loadout_item/healthpot
+	name = "Health Pot"
+	path = /obj/item/reagent_containers/glass/bottle/rogue/healthpot
+
+/datum/loadout_item/lantert
+	name = "Lantern"
+	path = /obj/item/flashlight/flare/torch/lantern
+
+/datum/loadout_item/cloth
+	name = "Cloth"
+	path = /obj/item/natural/cloth
+
+//carpa (para futuras cosas del lodout)
+
