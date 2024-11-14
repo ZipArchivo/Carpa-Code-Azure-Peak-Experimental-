@@ -103,7 +103,9 @@
 		var/mob/living/L = AM
 		if(HAS_TRAIT(L, required_trait))
 			for(var/mob/living/carbon/human/H in hearers(6,src))
-				if(!HAS_TRAIT(H, required_trait))
+				if(istype(H.head, /obj/item/storage/roguebag))
+					return
+				f(!HAS_TRAIT(H, required_trait))
 					to_chat(H, "<b>He descubierto una entrada bien escondida.</b>")
 					ADD_TRAIT(H, required_trait, TRAIT_GENERIC)
 			return TRUE
