@@ -93,6 +93,7 @@
 #define TRAIT_PUNISHMENT_CURSE "PunishmentCurse"
 #define TRAIT_LEPROSY "Leproso"
 #define TRAIT_NUDE_SLEEPER "Noche Desnuda"
+#define TRAIT_MONTYPYTHON_KING "Elegido Real"
 
 GLOBAL_LIST_INIT(roguetraits, list(
 	TRAIT_LEPROSY = span_necrosis("Soy un leproso asqueroso..."),
@@ -164,6 +165,7 @@ GLOBAL_LIST_INIT(roguetraits, list(
 	TRAIT_HORDE = span_info("DE SANGRE Y HUESO. SOY DEVOTO DE GRAGGAR! SIENTO LA FUERZA EN OTROS QUE SON IGUALES."),
 	TRAIT_FORTITUDE = span_info("The typical drain I feel from day to day life is lessened, my athleticism greater."),
 	TRAIT_GUIDANCE = span_info("Arcyne assistance guides my weapons."),
+	TRAIT_MONTYPYTHON_KING = span_info("'La dama del lago, su brazo envuelto en la seda mas pura y brillante, extrajo la espada excalibur del seno del agua. Simbolizando que la divina providencia me elegia a mi para que empuñase la espada.'"),
 	TRAIT_DEPRAVED = span_info("El lánguido olor de su libertinaje me resulta conocido, y puedo detectar su sórdida presencia en los demás.")
 ))
 
