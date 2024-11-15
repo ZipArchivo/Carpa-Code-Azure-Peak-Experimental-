@@ -195,7 +195,7 @@ GLOBAL_LIST_EMPTY(allCasters)
 	var/unit_no = 0
 	var/alert_delay = 500
 	var/alert = FALSE
-	var/scanned_user = "Unknown"
+	var/scanned_user = "Desconocido"
 	var/msg = ""
 	var/datum/picture/picture
 	var/channel_name = ""
