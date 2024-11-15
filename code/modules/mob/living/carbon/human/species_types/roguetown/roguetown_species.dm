@@ -17,7 +17,7 @@
 			return strings("german_replacement.json", type)
 		/*if("Hammerhold accent")
 			return strings("Anglish.json", type)*/     //Zip- Ingles antiguo, Zephyr y yo nos confundimos pensando que proper era el ingles antiguo
-		if("Acento Antiguo (Español Antiguo"))
+		if("Acento Antiguo (Español Antiguo)")
 			return strings("proper_replacement.json", type)
 		/*if("Lizard accent")
 			return strings("brazillian_replacement.json", type)*/
