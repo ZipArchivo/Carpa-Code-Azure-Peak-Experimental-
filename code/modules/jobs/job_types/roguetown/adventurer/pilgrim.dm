@@ -1,5 +1,5 @@
 /datum/job/roguetown/pilgrim
-	title = "Peregrino"
+	title = "Pilgrim"
 	flag = PILGRIM
 	department_flag = PEASANTS
 	faction = "Station"

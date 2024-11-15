@@ -1,5 +1,5 @@
 /datum/job/roguetown/villager
-	title = "Campesino"
+	title = "Towner"
 	flag = VILLAGER
 	department_flag = PEASANTS
 	faction = "Station"
