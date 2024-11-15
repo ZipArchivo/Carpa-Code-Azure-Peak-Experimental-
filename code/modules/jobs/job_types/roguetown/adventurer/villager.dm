@@ -1,12 +1,12 @@
 /datum/job/roguetown/villager
-	title = "Towner"
+	title = "Campesino"
 	flag = VILLAGER
 	department_flag = PEASANTS
 	faction = "Station"
 	total_positions = 75
 	spawn_positions = 75
 	allowed_races = RACES_ALL_KINDS
-	tutorial = "You've lived in this shithole for effectively all your life. You are not an explorer, nor exactly a warrior in many cases. You're just some average poor bastard who thinks they'll be something someday."
+	tutorial = "Has vivido en este maldito agujero prácticamente toda tu vida. No eres un explorador, desde luego tampoco eres uno de esos guerreros. Solo eres un puto desgraciado que cree que algún día será alguien.."
 	advclass_cat_rolls = list(CTAG_TOWNER = 20)
 	outfit = null
 	outfit_female = null
