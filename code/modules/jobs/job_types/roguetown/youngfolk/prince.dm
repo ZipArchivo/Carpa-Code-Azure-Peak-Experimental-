@@ -66,6 +66,7 @@
 		H.change_stat("speed", 1)
 		H.change_stat("fortune", 1)
 		ADD_TRAIT(H, TRAIT_NOBLE, TRAIT_GENERIC)
+		ADD_TRAIT(H, TRAIT_INCEST, TRAIT_GENERIC)
 
 /datum/advclass/heir/aristocrat
 	name = "Sheltered Aristocrat"
@@ -77,7 +78,7 @@
 	..()
 	ADD_TRAIT(H, TRAIT_NOBLE, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_SEEPRICES_SHITTY, TRAIT_GENERIC)
-	ADD_TRAIT(H, TRAIT_GOODLOVER, TRAIT_GENERIC) // Pillow princesses (gender neutral)
+	ADD_TRAIT(H, TRAIT_INCEST, TRAIT_GENERIC) // Pillow princesses (gender neutral)
 	belt = /obj/item/storage/belt/rogue/leather
 	beltl = /obj/item/storage/keyring/heir
 	beltr = /obj/item/storage/belt/rogue/pouch/coins/rich
@@ -123,6 +124,7 @@
 	ADD_TRAIT(H, TRAIT_NOBLE, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_CRITICAL_WEAKNESS, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_NORUN, TRAIT_GENERIC)
+	ADD_TRAIT(H, TRAIT_INCEST, TRAIT_GENERIC)
 	belt = /obj/item/storage/belt/rogue/leather
 	beltl = /obj/item/storage/keyring/heir
 	beltr = /obj/item/storage/belt/rogue/pouch/coins/rich

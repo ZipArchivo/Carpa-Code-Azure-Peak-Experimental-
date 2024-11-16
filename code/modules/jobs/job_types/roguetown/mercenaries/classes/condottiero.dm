@@ -37,9 +37,10 @@
 		H.mind.adjust_skillrank(/datum/skill/misc/lockpicking, 3, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/tracking, 4, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/craft/traps, 3, TRUE)
-		H.change_stat("endurance", 2)
-		H.change_stat("perception", 2)
-		H.change_stat("speed", 3)
+		H.change_stat("endurance", 3)
+		H.change_stat("perception", 3)
+		H.change_stat("speed", 4)
 		H.change_stat("intelligence", 1)
 
 	ADD_TRAIT(H, TRAIT_DODGEEXPERT, TRAIT_GENERIC)
+	ADD_TRAIT(H, TRAIT_OUTDOORSMAN, TRAIT_GENERIC)

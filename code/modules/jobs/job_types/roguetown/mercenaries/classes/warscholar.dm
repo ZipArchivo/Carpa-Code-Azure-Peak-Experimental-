@@ -78,6 +78,7 @@
 			H.mind.adjust_skillrank(/datum/skill/misc/alchemy, 3, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/magic/arcane, 4, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/misc/sewing, 2, TRUE)
+			ADD_TRAIT(H, TRAIT_OUTDOORSMAN, TRAIT_GENERIC)
 			if(H.age == AGE_OLD)
 				H.mind.adjust_skillrank(/datum/skill/magic/arcane, 1, TRUE)
 				H.change_stat("speed", -1)
@@ -122,6 +123,7 @@
 			r_hand = /obj/item/rogueweapon/katar
 			
 			ADD_TRAIT(H, TRAIT_DODGEEXPERT, TRAIT_GENERIC)
+			ADD_TRAIT(H, TRAIT_OUTDOORSMAN, TRAIT_GENERIC)
 		if("Vizier")
 			H.set_blindness(0)
 			to_chat(H, span_warning("You are a Naledi Vizier, a creacher of two worlds. Likely of a learned or upper class background, you are decently skilled in both combat and the arcane, but an expert at neither."))
@@ -145,6 +147,7 @@
 			H.change_stat("speed", 3)
 			H.mind.AddSpell(new /obj/effect/proc_holder/spell/targeted/touch/prestidigitation)
 			H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/push_spell)
+			ADD_TRAIT(H, TRAIT_OUTDOORSMAN, TRAIT_GENERIC)
 			r_hand = /obj/item/rogueweapon/sword/long/rider
 			armor = /obj/item/clothing/suit/roguetown/shirt/robe/magered
 

@@ -64,13 +64,14 @@ Also given some non-combat skills that a peasent would have, just to support the
 		H.mind.adjust_skillrank(/datum/skill/craft/crafting, 2, TRUE)	//Peasent levy, so some skill
 		H.mind.adjust_skillrank(/datum/skill/labor/farming, 2, TRUE)		//Peasent levy, so some skill
 		H.change_stat("strength", 2)
-		H.change_stat("perception", 2)
+		H.change_stat("perception", 3)
 		H.change_stat("constitution", 2)
-		H.change_stat("endurance", 3)
-		H.change_stat("speed", 3)
+		H.change_stat("endurance", 4)
+		H.change_stat("speed", 5)
 		H.verbs |= /mob/proc/haltyell
 	ADD_TRAIT(H, TRAIT_DODGEEXPERT, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_NOSEGRAB, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_NUTCRACKER, TRAIT_GENERIC)
+	ADD_TRAIT(H, TRAIT_OUTDOORSMAN, TRAIT_GENERIC)
 	

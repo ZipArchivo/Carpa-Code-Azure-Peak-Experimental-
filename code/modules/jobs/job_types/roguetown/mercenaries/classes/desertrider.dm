@@ -36,7 +36,7 @@
 			H.mind.adjust_skillrank(/datum/skill/misc/sneaking, 2, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/misc/reading, 1, TRUE)
 			H.change_stat("strength", 3)
-			H.change_stat("endurance", 2)
+			H.change_stat("endurance", 3)
 			H.change_stat("intelligence", 1)
 			H.change_stat("speed", 3)
 			backl = /obj/item/rogueweapon/shield/wood
@@ -65,7 +65,7 @@
 			H.change_stat("strength", 1)
 			H.change_stat("endurance", 2)
 			H.change_stat("intelligence", 2)
-			H.change_stat("speed", 3)
+			H.change_stat("speed", 4)
 			backl = /obj/item/rogueweapon/sword/long/rider
 
 	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/black
@@ -85,3 +85,4 @@
 
 	ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_DODGEEXPERT, TRAIT_GENERIC)
+	ADD_TRAIT(H, TRAIT_OUTDOORSMAN, TRAIT_GENERIC)
