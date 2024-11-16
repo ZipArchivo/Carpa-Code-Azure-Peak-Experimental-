@@ -8,6 +8,7 @@
 	spillable = TRUE
 	possible_item_intents = list(INTENT_POUR, /datum/intent/fill, INTENT_SPLASH, INTENT_GENERIC)
 	resistance_flags = ACID_PROOF
+
 /datum/intent/fill
 	name = "fill"
 	icon_state = "infill"
@@ -15,6 +16,7 @@
 	noaa = TRUE
 	candodge = FALSE
 	misscost = 0
+
 /datum/intent/pour
 	name = "feed"
 	icon_state = "infeed"
@@ -22,6 +24,7 @@
 	noaa = TRUE
 	candodge = FALSE
 	misscost = 0
+
 /datum/intent/splash
 	name = "splash"
 	icon_state = "insplash"
@@ -57,34 +60,40 @@
 						span_danger("[user] attempts to feed you something."))
 			if(!do_mob(user, M))
 				return
-			if(M != user)
-				M.visible_message(span_danger("[user] attempts to feed [M] something."), \
-							span_danger("[user] feeds you something."))
-				log_combat(user, M, "fed", reagents.log_list())
-			else
-				// check to see if we're a noble drinking soup
-				if (ishuman(user) && istype(src, /obj/item/reagent_containers/glass/bowl))
-					var/mob/living/carbon/human/human_user = user
-					if (human_user.is_noble()) // egads we're an unmannered SLOB
-						human_user.add_stress(/datum/stressevent/noble_bad_manners)
-						if (prob(25))
-							to_chat(human_user, span_red("I've got better manners than this..."))
-				to_chat(user, span_notice("I swallow a gulp of [src]."))
-			addtimer(CALLBACK(reagents, TYPE_PROC_REF(/datum/reagents, trans_to), M, min(amount_per_transfer_from_this,5), TRUE, TRUE, FALSE, user, FALSE, INGEST), 5)
-			playsound(M.loc,pick(drinksounds), 100, TRUE)
-			return
+			if(!reagents || !reagents.total_volume)
+				return // The drink might be empty after the delay, such as by spam-feeding
+			M.visible_message(span_danger("[user] feeds [M] something."), \
+						span_danger("[user] feeds you something."))
+			log_combat(user, M, "fed", reagents.log_list())
+		else
+			// check to see if we're a noble drinking soup
+			if (ishuman(user) && istype(src, /obj/item/reagent_containers/glass/bowl))
+				var/mob/living/carbon/human/human_user = user
+				if (human_user.is_noble()) // egads we're an unmannered SLOB
+					human_user.add_stress(/datum/stressevent/noble_bad_manners)
+					if (prob(25))
+						to_chat(human_user, span_red("I've got better manners than this..."))
+			to_chat(user, span_notice("I swallow a gulp of [src]."))
+		addtimer(CALLBACK(reagents, TYPE_PROC_REF(/datum/reagents, trans_to), M, min(amount_per_transfer_from_this,5), TRUE, TRUE, FALSE, user, FALSE, INGEST), 5)
+		playsound(M.loc,pick(drinksounds), 100, TRUE)
+		return
 
 /obj/item/reagent_containers/glass/attack_obj(obj/target, mob/living/user)
 	if(user.used_intent.type == INTENT_GENERIC)
 		return ..()
+
 	testing("attackobj1")
+
 	if(!spillable)
 		return
+
+
 	if(target.is_refillable() && (user.used_intent.type == INTENT_POUR)) //Something like a glass. Player probably wants to transfer TO it.
 		testing("attackobj2")
 		if(!reagents.total_volume)
 			to_chat(user, span_warning("[src] is empty!"))
 			return
+
 		if(target.reagents.holder_full())
 			to_chat(user, span_warning("[target] is full."))
 			return
@@ -104,11 +113,13 @@
 			else
 				break
 		return
+
 	if(target.is_drainable() && (user.used_intent.type == /datum/intent/fill)) //A dispenser. Transfer FROM it TO us.
 		testing("attackobj3")
 		if(!target.reagents.total_volume)
 			to_chat(user, span_warning("[target] is empty!"))
 			return
+
 		if(reagents.holder_full())
 			to_chat(user, span_warning("[src] is full."))
 			return
@@ -126,14 +137,17 @@
 				target.reagents.trans_to(src, amount_per_transfer_from_this, transfered_by = user)
 			else
 				break
+
+
 		return
+
 	if(reagents.total_volume && user.used_intent.type == INTENT_SPLASH)
 		user.visible_message(span_danger("[user] splashes the contents of [src] onto [target]!"), \
 							span_notice("I splash the contents of [src] onto [target]."))
 		reagents.reaction(target, TOUCH)
 		reagents.clear_reagents()
 		return
-		
+
 /obj/item/reagent_containers/glass/afterattack(obj/target, mob/user, proximity)
 	if(user.used_intent.type == INTENT_GENERIC)
 		return ..()

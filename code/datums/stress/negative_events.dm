@@ -253,7 +253,7 @@
 	timer = 5 MINUTES
 
 datum/stressevent/noble_impoverished_food
-	stressadd = 3
+	stressadd = 2
 	desc = span_boldred("Que repugnante. ¿Quién sería capaz de comer esto...?")
 	timer = 10 MINUTES
 
@@ -263,7 +263,7 @@ datum/stressevent/noble_impoverished_food
 	timer = 60 MINUTES
 
 /datum/stressevent/noble_bland_food
-	stressadd = 2
+	stressadd = 1
 	desc = span_red("Esta comida es realmente insipida, no esta a mi nivel. Yo merezco algo mejor...")
 	timer = 5 MINUTES
 
