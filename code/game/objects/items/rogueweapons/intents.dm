@@ -265,12 +265,6 @@
 	volume = 100
 	extra_range = 3
 
-/datum/looping_sound/invokeascendant
-	mid_sounds = list('sound/magic/chargingold.ogg')
-	mid_length = 320
-	volume = 100
-	extra_range = 5
-	
 /datum/looping_sound/flailswing
 	mid_sounds = list('sound/combat/wooshes/flail_swing.ogg')
 	mid_length = 7
