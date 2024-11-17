@@ -127,7 +127,7 @@
 	"The Queen's High Seas" = 'sound/music/instruments/guitar (11).ogg')
 
 /obj/item/rogue/instrument/harp
-	name = "harp"
+	name = "arpa"
 	desc = "Un arpa de la fina artesania de los elfos."
 	icon_state = "harp"
 	song_list = list("Through Thine Window, He Glanced" = 'sound/music/instruments/harb (1).ogg',
@@ -147,9 +147,29 @@
 	"Spit Shine" = 'sound/music/instruments/flute (7).ogg')
 
 /obj/item/rogue/instrument/drum
-	name = "drum"
+	name = "tambor"
 	desc = "Confeccionado con pieles tirantes en un robusto marco, palpita como el latido de un corazon gigantesco."
 	icon_state = "drum"
 	song_list = list("Barbarian's Moot" = 'sound/music/instruments/drum (1).ogg',
 	"Muster the Wardens" = 'sound/music/instruments/drum (2).ogg',
 	"The Earth That Quakes" = 'sound/music/instruments/drum (3).ogg')
+
+/obj/item/rogue/instrument/hurdygurdy
+	name = "Zanfona"
+	desc = "Un instrumento de cuerdas de madera, accionado por una perilla, cuya melodía te lleva a los mares distantes."
+	icon_state = "hurdygurdy"
+	song_list = list("Ruler's One Ring" = 'sound/music/instruments/hurdy (1).ogg',
+	"Tangled Trod" = 'sound/music/instruments/hurdy (2).ogg',
+	"Motus" = 'sound/music/instruments/hurdy (3).ogg',
+	"Becalmed" = 'sound/music/instruments/hurdy (4).ogg',
+	"The Bloody Throne" = 'sound/music/instruments/hurdy (5).ogg')
+
+/obj/item/rogue/instrument/viola
+	name = "viola"
+	desc = "La refinada y noble Viola, el primer instrumento que todo príncipe aprende."
+	icon_state = "viola"
+	song_list = list("Far Flung Tale" = 'sound/music/instruments/viola (1).ogg',
+	"G Major Cello Suite No. 1" = 'sound/music/instruments/viola (2).ogg',
+	"Ursine's Home" = 'sound/music/instruments/viola (3).ogg',
+	"Mead, Gold and Blood" = 'sound/music/instruments/viola (4).ogg',
+	"Gasgow's Reel" = 'sound/music/instruments/viola (5).ogg')

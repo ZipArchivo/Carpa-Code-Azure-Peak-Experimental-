@@ -16,6 +16,7 @@ GLOBAL_LIST_INIT(roguetown_areas_typecache, typecacheof(/area/rogue/indoors/town
 	requires_power = FALSE
 //	var/previous_ambient = ""
 	var/town_area = FALSE
+	var/keep_area = FALSE
 
 /area/rogue/Entered(mob/living/carbon/human/guy)
 
@@ -23,6 +24,7 @@ GLOBAL_LIST_INIT(roguetown_areas_typecache, typecacheof(/area/rogue/indoors/town
 	if((src.town_area == TRUE) && HAS_TRAIT(guy, TRAIT_GUARDSMAN) && guy.z == 3 && !guy.has_status_effect(/datum/status_effect/buff/guardbuffone)) //man at arms
 		guy.apply_status_effect(/datum/status_effect/buff/guardbuffone)
 
+<<<<<<< HEAD
 //TRAIT DE OUTDOORSMAN
 
 /area/rogue/Entered(mob/living/carbon/human/guy)
@@ -32,6 +34,13 @@ GLOBAL_LIST_INIT(roguetown_areas_typecache, typecacheof(/area/rogue/indoors/town
 		guy.apply_status_effect(/datum/status_effect/buff/outdoorsman)
 
 //fin del trait
+=======
+/area/rogue/Entered(mob/living/carbon/human/guy)
+
+	. = ..()
+	if((src.keep_area == TRUE) && HAS_TRAIT(guy, TRAIT_KNIGHTSMAN) && guy.z == 3 && !guy.has_status_effect(/datum/status_effect/buff/knightbuff)) //man at arms
+		guy.apply_status_effect(/datum/status_effect/buff/knightbuff)
+>>>>>>> parent of 220b8c7 (Revert "hago comit para unir con bee y no joderlo (NO MERGEAR NO FURULA AUN)")
 
 /area/rogue/indoors
 	name = "indoors rt"
@@ -472,7 +481,14 @@ GLOBAL_LIST_INIT(roguetown_areas_typecache, typecacheof(/area/rogue/indoors/town
 	droning_sound_dusk = 'sound/music/area/septimus.ogg'
 	droning_sound_night = 'sound/music/area/sleeping.ogg'
 
-/area/rogue/indoors/town/manor
+/area/rogue/outdoors/exposed/town/keep
+	name = "Keep"
+	icon_state = "manor"
+	droning_sound = 'sound/music/area/manorgarri.ogg'
+	keep_area = TRUE
+	town_area = TRUE
+
+/arearogue/indoors/town/manor
 	name = "Manor"
 	icon_state = "manor"
 	droning_sound = 'sound/music/area/manorgarri.ogg'
@@ -480,11 +496,14 @@ GLOBAL_LIST_INIT(roguetown_areas_typecache, typecacheof(/area/rogue/indoors/town
 	droning_sound_night = null
 	converted_type = /area/rogue/outdoors/exposed/manorgarri
 	first_time_text = "LA FORTALEZA DE AZURE PEAK"
+	keep_area = TRUE
+
 /area/rogue/outdoors/exposed/manorgarri
 	icon_state = "manorgarri"
 	droning_sound = 'sound/music/area/manorgarri.ogg'
 	droning_sound_dusk = null
 	droning_sound_night = null
+	keep_area = TRUE
 
 /area/rogue/indoors/town/magician
 	name = "Wizard's Tower"
@@ -495,11 +514,14 @@ GLOBAL_LIST_INIT(roguetown_areas_typecache, typecacheof(/area/rogue/indoors/town
 	droning_sound_dusk = null
 	droning_sound_night = null
 	converted_type = /area/rogue/outdoors/exposed/magiciantower
+	keep_area = TRUE
+
 /area/rogue/outdoors/exposed/magiciantower
 	icon_state = "magiciantower"
 	droning_sound = 'sound/music/area/magiciantower.ogg'
 	droning_sound_dusk = null
 	droning_sound_night = null
+	keep_area = TRUE
 
 /area/rogue/indoors/town/shop
 	name = "Shop"
@@ -539,6 +561,7 @@ GLOBAL_LIST_INIT(roguetown_areas_typecache, typecacheof(/area/rogue/indoors/town
 	droning_sound_dusk = null
 	droning_sound_night = null
 	converted_type = /area/rogue/outdoors/exposed/manorgarri
+	keep_area = TRUE
 
 /area/rogue/indoors/town/cell
 	name = "dungeon cell"
@@ -549,6 +572,7 @@ GLOBAL_LIST_INIT(roguetown_areas_typecache, typecacheof(/area/rogue/indoors/town
 	droning_sound_dusk = null
 	droning_sound_night = null
 	converted_type = /area/rogue/outdoors/exposed/manorgarri
+	keep_area = TRUE
 
 /area/rogue/indoors/town/tavern
 	name = "tavern"
@@ -599,6 +623,7 @@ GLOBAL_LIST_INIT(roguetown_areas_typecache, typecacheof(/area/rogue/indoors/town
 /area/rogue/indoors/town/vault
 	name = "vault"
 	icon_state = "vault"
+	keep_area = TRUE
 
 /area/rogue/indoors/town/vault/can_craft_here()
 	return FALSE
@@ -669,6 +694,11 @@ GLOBAL_LIST_INIT(roguetown_areas_typecache, typecacheof(/area/rogue/indoors/town
 	droning_sound_night = 'sound/music/area/sleeping.ogg'
 	soundenv = 17
 	converted_type = /area/rogue/indoors/shelter/town/roofs
+/area/rogue/outdoors/town/roofs/keep
+	name = "Keep Rooftops"
+	icon_state = "manor"
+	keep_area = TRUE
+	town_area = TRUE
 /area/rogue/indoors/shelter/town/roofs
 	icon_state = "roofs"
 	droning_sound = 'sound/music/area/field.ogg'
@@ -753,7 +783,15 @@ GLOBAL_LIST_INIT(roguetown_areas_typecache, typecacheof(/area/rogue/indoors/town
 	droning_sound_dusk = null
 	droning_sound_night = null
 	soundenv = 5
+	town_area = TRUE
 	converted_type = /area/rogue/outdoors/exposed/under/basement
+
+/area/rogue/under/town/basement/keep
+	name = "keep basement"
+	icon_state = "basement"
+	keep_area = TRUE
+	town_area = TRUE
+
 /area/rogue/outdoors/exposed/under/basement
 	icon_state = "basement"
 	droning_sound = 'sound/music/area/catacombs.ogg'
