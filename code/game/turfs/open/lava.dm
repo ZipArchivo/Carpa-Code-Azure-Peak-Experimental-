@@ -109,7 +109,7 @@
 
 /turf/open/lava/proc/is_safe()
 	//if anything matching this typecache is found in the lava, we don't burn things
-	var/static/list/lava_safeties_typecache = typecacheof(list(/obj/structure/lattice/catwalk, /obj/structure/stone_tile))
+	var/static/list/lava_safeties_typecache = typecacheof(list(/obj/structure/lattice/catwalk, /obj/structure/stone_tile, /obj/structure/bars/pipe))
 	var/list/found_safeties = typecache_filter_list(contents, lava_safeties_typecache)
 	for(var/obj/structure/stone_tile/S in found_safeties)
 		if(S.fallen)
@@ -182,8 +182,6 @@
 				L.IgniteMob()
 				if(L.health <= 0)
 					L.dust(drop_items = TRUE)
-					
-
 
 /turf/open/lava/onbite(mob/user)
 	if(isliving(user))
@@ -293,8 +291,6 @@
 
 			L.dust(drop_items = TRUE)
 
-
-
 /turf/open/lava/acid/onbite(mob/user)
 	if(isliving(user))
 		var/mob/living/L = user
@@ -312,6 +308,3 @@
 			C.flash_fullscreen("redflash3")
 			C.emote("agony", forced = TRUE)
 			C.gib() //YOU. LITERALLY. DESERVE THIS.
-
-
-
