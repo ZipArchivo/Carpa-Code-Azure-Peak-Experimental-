@@ -253,11 +253,7 @@
 	timer = 5 MINUTES
 
 <<<<<<< HEAD
-<<<<<<< HEAD
 datum/stressevent/noble_impoverished_food
-=======
-/datum/stressevent/noble_impoverished_food
->>>>>>> parent of 220b8c7 (Revert "hago comit para unir con bee y no joderlo (NO MERGEAR NO FURULA AUN)")
 =======
 /datum/stressevent/noble_impoverished_food
 >>>>>>> parent of 220b8c7 (Revert "hago comit para unir con bee y no joderlo (NO MERGEAR NO FURULA AUN)")

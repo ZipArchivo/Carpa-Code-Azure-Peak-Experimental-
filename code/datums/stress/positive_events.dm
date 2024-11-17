@@ -147,33 +147,23 @@
 	stressadd = -2
 	desc = list(span_green("Verdaderamente, un festin digno de mi posicion."),span_green("En verdad, un banquete digno de mi rango."),span_green("Realmente, un festín acorde a mi noble estatus."))
 <<<<<<< HEAD
-<<<<<<< HEAD
 
 /datum/stressevent/wine_okay
 	stressadd = -1
 	desc = span_green("That drink was alright.")
 =======
-=======
->>>>>>> parent of 220b8c7 (Revert "hago comit para unir con bee y no joderlo (NO MERGEAR NO FURULA AUN)")
 	timer = 30 MINUTES
 
 /datum/stressevent/wine_okay
 	stressadd = -1
 	desc = span_green("Esa bebida fue medianamente satisfactoria.")
-<<<<<<< HEAD
->>>>>>> parent of 220b8c7 (Revert "hago comit para unir con bee y no joderlo (NO MERGEAR NO FURULA AUN)")
-=======
 >>>>>>> parent of 220b8c7 (Revert "hago comit para unir con bee y no joderlo (NO MERGEAR NO FURULA AUN)")
 	timer = 10 MINUTES
 
 /datum/stressevent/wine_good
 	stressadd = -2
 <<<<<<< HEAD
-<<<<<<< HEAD
 	desc = span_green("A decent vintage always goes down easy.")
-=======
-	desc = span_green("Un vino digno siempre se desliza con suavidad.")
->>>>>>> parent of 220b8c7 (Revert "hago comit para unir con bee y no joderlo (NO MERGEAR NO FURULA AUN)")
 =======
 	desc = span_green("Un vino digno siempre se desliza con suavidad.")
 >>>>>>> parent of 220b8c7 (Revert "hago comit para unir con bee y no joderlo (NO MERGEAR NO FURULA AUN)")
@@ -182,13 +172,8 @@
 /datum/stressevent/wine_great
 	stressadd = -3
 <<<<<<< HEAD
-<<<<<<< HEAD
 	desc = span_blue("An absolutely exquisite vintage. Indubitably.")
 	timer = 10 MINUTES
-=======
-	desc = span_blue("Un vino absolutamente exquisito. Indudablemente.")
-	timer = 10 MINUTES
->>>>>>> parent of 220b8c7 (Revert "hago comit para unir con bee y no joderlo (NO MERGEAR NO FURULA AUN)")
 =======
 	desc = span_blue("Un vino absolutamente exquisito. Indudablemente.")
 	timer = 10 MINUTES

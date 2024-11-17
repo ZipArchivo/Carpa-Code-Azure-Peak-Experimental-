@@ -25,7 +25,6 @@ GLOBAL_LIST_INIT(roguetown_areas_typecache, typecacheof(/area/rogue/indoors/town
 		guy.apply_status_effect(/datum/status_effect/buff/guardbuffone)
 
 <<<<<<< HEAD
-<<<<<<< HEAD
 //TRAIT DE OUTDOORSMAN
 
 /area/rogue/Entered(mob/living/carbon/human/guy)
@@ -36,16 +35,11 @@ GLOBAL_LIST_INIT(roguetown_areas_typecache, typecacheof(/area/rogue/indoors/town
 
 //fin del trait
 =======
-=======
->>>>>>> parent of 220b8c7 (Revert "hago comit para unir con bee y no joderlo (NO MERGEAR NO FURULA AUN)")
 /area/rogue/Entered(mob/living/carbon/human/guy)
 
 	. = ..()
 	if((src.keep_area == TRUE) && HAS_TRAIT(guy, TRAIT_KNIGHTSMAN) && guy.z == 3 && !guy.has_status_effect(/datum/status_effect/buff/knightbuff)) //man at arms
 		guy.apply_status_effect(/datum/status_effect/buff/knightbuff)
-<<<<<<< HEAD
->>>>>>> parent of 220b8c7 (Revert "hago comit para unir con bee y no joderlo (NO MERGEAR NO FURULA AUN)")
-=======
 >>>>>>> parent of 220b8c7 (Revert "hago comit para unir con bee y no joderlo (NO MERGEAR NO FURULA AUN)")
 
 /area/rogue/indoors
