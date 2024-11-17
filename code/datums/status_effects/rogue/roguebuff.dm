@@ -246,14 +246,20 @@
 	id = "guardbuffone"
 	alert_type = /atom/movable/screen/alert/status_effect/buff/guardbuffone
 <<<<<<< HEAD
+<<<<<<< HEAD
 	effectedstats = list("strength" = 2, "constitution" = 3,"endurance" = 2, "speed" = 3, "perception" = 3) //if they can't figure out how to ply this for winning chances i'm going to sob openly
 =======
+=======
+>>>>>>> parent of 220b8c7 (Revert "hago comit para unir con bee y no joderlo (NO MERGEAR NO FURULA AUN)")
 	effectedstats = list("constitution" = 1,"endurance" = 1, "speed" = 1, "perception" = 3) //if they can't figure out how to ply this for winning chances i'm going to sob openly 
 
 /datum/status_effect/buff/knightbuff
 	id = "knightbuff"
 	alert_type = /atom/movable/screen/alert/status_effect/buff/knightbuff
 	effectedstats = list("constitution" = 1,"endurance" = 1, "speed" = 1, "perception" = 2)
+<<<<<<< HEAD
+>>>>>>> parent of 220b8c7 (Revert "hago comit para unir con bee y no joderlo (NO MERGEAR NO FURULA AUN)")
+=======
 >>>>>>> parent of 220b8c7 (Revert "hago comit para unir con bee y no joderlo (NO MERGEAR NO FURULA AUN)")
 	duration = 50000 //essentially permanent, removes when we're out of the area
 
@@ -264,6 +270,7 @@
 	if(!(our_area.town_area))
 		owner.remove_status_effect(/datum/status_effect/buff/guardbuffone)
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 //EL TRAIT DE MIERDA DE OUTDOORSMAN
 
@@ -287,12 +294,17 @@
 
 //FIN DEL TRAIT DE MIERDA
 =======
+=======
+>>>>>>> parent of 220b8c7 (Revert "hago comit para unir con bee y no joderlo (NO MERGEAR NO FURULA AUN)")
 /datum/status_effect/buff/knightbuff/process()
 
 	.=..()
 	var/area/rogue/our_area = get_area(owner)
 	if(!(our_area.keep_area))
 		owner.remove_status_effect(/datum/status_effect/buff/knightbuff)
+<<<<<<< HEAD
+>>>>>>> parent of 220b8c7 (Revert "hago comit para unir con bee y no joderlo (NO MERGEAR NO FURULA AUN)")
+=======
 >>>>>>> parent of 220b8c7 (Revert "hago comit para unir con bee y no joderlo (NO MERGEAR NO FURULA AUN)")
 
 /atom/movable/screen/alert/status_effect/buff/healing
