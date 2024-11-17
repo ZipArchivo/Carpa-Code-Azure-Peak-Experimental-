@@ -41,7 +41,7 @@
 	domain = "Dios del robo, La redistribucion de la riqueza y El comercio"
 	desc = "El Hombre que robo el fuego del Inframundo y lo entrego a cambio de adoracion; la primera Transaccion, cortando un agujero en el firmamento e inundando la realidad ontologica con el hecho de la Riqueza. Quitarle a los ricos, darle a los que no valen nada, empoderar."
 	worshippers = "Salteadores de Diliguencias, Ladrones, Campesinos Oprimidos, Comerciantes"
-	mob_traits = list(TRAIT_COMMIE)
+	mob_traits = list(TRAIT_COMMIE, TRAIT_SEEPRICES_SHITTY)
 	t0 = /obj/effect/proc_holder/spell/invoked/appraise
 	t1 = /obj/effect/proc_holder/spell/invoked/transact
 	t2 = /obj/effect/proc_holder/spell/invoked/equalize
