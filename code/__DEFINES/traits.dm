@@ -97,7 +97,6 @@
 GLOBAL_LIST_INIT(roguetraits, list(
 	TRAIT_LEPROSY = span_necrosis("Soy un leproso asqueroso..."),
 	TRAIT_GUARDSMAN = span_info("Estoy atento en mis guardias. En el pueblo de Azure Peak, mis habilidades son mas eficientes, y mis sentidos mas agudos."),
-	TRAIT_KNIGHTSMAN = span_info("Soy un defensor incondicional de la corona. En la fortaleza del palacio, mis habilidades son más nítidas debido a mi rutina y familiaridad."),
 	TRAIT_CHOSEN = "Astrata te ha elegido para presentar su gloria.",
 	TRAIT_WEBWALK = "Puedo moverme libremente en telarañas.",
 	TRAIT_NOSTINK = span_dead("Mi nariz está entumecida ante el olor a descomposición.."),
