@@ -5,36 +5,36 @@
 	switch(H.char_accent)
 		if("No accent")
 			return
-		if("Dwarf accent")
+		/*if("Dwarf accent")
 			return strings("dwarfcleaner_replacement.json", type)
 		if("Dwarf Gibberish accent")
-			return strings("dwarf_replacement.json", type)
-		if("Dark Elf accent")
+			return strings("dwarf_replacement.json", type)*/
+		if("Acento Elfo Oscuro (Frances)")
 			return strings("french_replacement.json", type)
-		if("Elf accent")
+		if("Acento Elfico (Ruso)")
 			return strings("russian_replacement.json", type)
-		if("Grenzelhoft accent")
+		if("Acento Grenzenhoft (Aleman)")
 			return strings("german_replacement.json", type)
-		if("Hammerhold accent")
-			return strings("Anglish.json", type)
-		if("Assimar accent")
+		/*if("Hammerhold accent")
+			return strings("Anglish.json", type)*/     //Zip- Ingles antiguo, Zephyr y yo nos confundimos pensando que proper era el ingles antiguo
+		if("Acento Antiguo (Español Antiguo)")
 			return strings("proper_replacement.json", type)
-		if("Lizard accent")
-			return strings("brazillian_replacement.json", type)
-		if("Tiefling accent")
+		/*if("Lizard accent")
+			return strings("brazillian_replacement.json", type)*/
+		if("Acento Tiefling (Andaluz)")
 			return strings("spanish_replacement.json", type)
-		if("Half Orc accent")
-			return strings("middlespeak.json", type)
-		if("Urban Orc accent")
+		/*if("Half Orc accent")
+			return strings("middlespeak.json", type)*/
+		/*if("Urban Orc accent")
 			return strings("norf_replacement.json", type)
 		if("Hissy accent")
 			return strings("hissy_replacement.json", type)
 		if("Inzectoid accent")
-			return strings("inzectoid_replacement.json", type)
-		if("Feline accent")
+			return strings("inzectoid_replacement.json", type)*/
+		if("Acento Felino (Monica)")
 			return strings("feline_replacement.json", type)
-		if("Slopes accent")
-			return strings("welsh_replacement.json", type)
+		/*if("Slopes accent")
+			return strings("welsh_replacement.json", type)*/
 
 /datum/species/proc/get_accent(mob/living/carbon/human/H)
 	return get_accent_list(H,"full")
@@ -57,6 +57,11 @@
 	var/message = speech_args[SPEECH_MESSAGE]
 
 	message = treat_message_accent(message, strings("accent_universal.json", "universal"), REGEX_FULLWORD)
+
+	message = treat_message_accent(message, get_accent(source), REGEX_FULLWORD)
+	message = treat_message_accent(message, get_accent_start(source), REGEX_STARTWORD)
+	message = treat_message_accent(message, get_accent_end(source), REGEX_ENDWORD)
+	message = treat_message_accent(message, get_accent_any(source), REGEX_ANY)
 
 	speech_args[SPEECH_MESSAGE] = trim(message)
 

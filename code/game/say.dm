@@ -100,7 +100,7 @@ GLOBAL_LIST_INIT(freqtospan, list(
 						appellation = "Man"
 					else
 						appellation = "Person"
-				namepart = "Unknown [appellation]"
+				namepart = "Desconocido [appellation]"
 			else
 				namepart = "Desconocido"
 			spanpart1 = "<span class='smallyell'>"

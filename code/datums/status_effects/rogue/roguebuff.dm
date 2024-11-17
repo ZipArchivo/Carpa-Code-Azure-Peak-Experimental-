@@ -240,7 +240,7 @@
 /datum/status_effect/buff/guardbuffone
 	id = "guardbuffone"
 	alert_type = /atom/movable/screen/alert/status_effect/buff/guardbuffone
-	effectedstats = list("constitution" = 1,"endurance" = 1, "speed" = 1, "perception" = 3) //if they can't figure out how to ply this for winning chances i'm going to sob openly
+	effectedstats = list("strength" = 2, "constitution" = 3,"endurance" = 2, "speed" = 3, "perception" = 3) //if they can't figure out how to ply this for winning chances i'm going to sob openly
 	duration = 50000 //essentially permanent, removes when we're out of the area
 
 /datum/status_effect/buff/guardbuffone/process()
@@ -249,6 +249,28 @@
 	var/area/rogue/our_area = get_area(owner)
 	if(!(our_area.town_area))
 		owner.remove_status_effect(/datum/status_effect/buff/guardbuffone)
+
+//EL TRAIT DE MIERDA DE OUTDOORSMAN
+
+/atom/movable/screen/alert/status_effect/buff/outdoorsman
+	name = "Entorno no familiar"
+	desc = "La ciudad esta hecha una cloaca... Toda llena de basura y gentuza, se me revuelven las tripas, me da hasta dolor de cabeza oler toda esta basura, la porqueria esta por todas partes. Si estuviera fuera de este sitio mis habilidades serian mas agudas..."
+	icon_state = "debuff"
+
+/datum/status_effect/buff/outdoorsman
+	id = "outdoorsman"
+	alert_type = /atom/movable/screen/alert/status_effect/buff/outdoorsman
+	effectedstats = list("strength" = -2, "constitution" = -3,"endurance" = -2, "speed" = -3, "perception" = -3) //Lo mismo es un poco extremo, pero podemos ir probando
+	duration = 50000 //basicamente permanente
+
+/datum/status_effect/buff/outdoorsman/process()
+
+	.=..()
+	var/area/rogue/our_area = get_area(owner)
+	if(!(our_area.town_area))
+		owner.remove_status_effect(/datum/status_effect/buff/outdoorsman)
+
+//FIN DEL TRAIT DE MIERDA
 
 /atom/movable/screen/alert/status_effect/buff/healing
 	name = "Milagro De La Curacion!"

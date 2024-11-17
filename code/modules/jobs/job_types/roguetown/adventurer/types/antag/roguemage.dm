@@ -53,3 +53,4 @@
 		H.change_stat("speed", 1) //ohhh sweetie this is NOT gonna help
 		H.mind.adjust_spellpoints(1)
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/targeted/touch/prestidigitation)
+		ADD_TRAIT(H, TRAIT_OUTDOORSMAN, TRAIT_GENERIC)	

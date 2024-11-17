@@ -23,6 +23,16 @@ GLOBAL_LIST_INIT(roguetown_areas_typecache, typecacheof(/area/rogue/indoors/town
 	if((src.town_area == TRUE) && HAS_TRAIT(guy, TRAIT_GUARDSMAN) && guy.z == 3 && !guy.has_status_effect(/datum/status_effect/buff/guardbuffone)) //man at arms
 		guy.apply_status_effect(/datum/status_effect/buff/guardbuffone)
 
+//TRAIT DE OUTDOORSMAN
+
+/area/rogue/Entered(mob/living/carbon/human/guy)
+
+	. = ..()
+	if((src.town_area == TRUE) && HAS_TRAIT(guy, TRAIT_OUTDOORSMAN) && guy.z == 3 && !guy.has_status_effect(/datum/status_effect/buff/outdoorsman)) //pos eso
+		guy.apply_status_effect(/datum/status_effect/buff/outdoorsman)
+
+//fin del trait
+
 /area/rogue/indoors
 	name = "indoors rt"
 	icon_state = "indoors"

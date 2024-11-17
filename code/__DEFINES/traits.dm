@@ -44,6 +44,10 @@
 #define TRAIT_TRAINED_SMITH "Herrero Entrenado"
 #define TRAIT_GUARDSMAN "Guardia Vigilante"
 #define TRAIT_KNIGHTSMAN "Resistencia Real"
+#define TRAIT_BANDIT_HUD "Honor Entre Ladrones"
+#define TRAIT_MONTYPYTHON_KING "Elegido Real"
+#define TRAIT_INCEST "Incestuoso"
+#define TRAIT_OUTDOORSMAN "De fuera"
 
 //Hearthstone port (Tracking)
 #define TRAIT_PERFECT_TRACKER "Rastreador Experimentado" //Will always find any tracks and analyzes them perfectly.
@@ -93,6 +97,7 @@
 #define TRAIT_PUNISHMENT_CURSE "PunishmentCurse"
 #define TRAIT_LEPROSY "Leproso"
 #define TRAIT_NUDE_SLEEPER "Noche Desnuda"
+
 
 GLOBAL_LIST_INIT(roguetraits, list(
 	TRAIT_LEPROSY = span_necrosis("Soy un leproso asqueroso..."),
@@ -164,7 +169,10 @@ GLOBAL_LIST_INIT(roguetraits, list(
 	TRAIT_HORDE = span_info("DE SANGRE Y HUESO. SOY DEVOTO DE GRAGGAR! SIENTO LA FUERZA EN OTROS QUE SON IGUALES."),
 	TRAIT_FORTITUDE = span_info("The typical drain I feel from day to day life is lessened, my athleticism greater."),
 	TRAIT_GUIDANCE = span_info("Arcyne assistance guides my weapons."),
-	TRAIT_DEPRAVED = span_info("El lánguido olor de su libertinaje me resulta conocido, y puedo detectar su sórdida presencia en los demás.")
+	TRAIT_MONTYPYTHON_KING = span_info("'La dama del lago, su brazo envuelto en la seda mas pura y brillante, extrajo la espada excalibur del seno del agua. Simbolizando que la divina providencia me elegia a mi para que empuñase la espada.'"),
+	TRAIT_INCEST = span_love("Las malas lenguas dicen que tu hermana es de poco vestir, especialmente cuando se encuentra ante tu presencia."),
+	TRAIT_DEPRAVED = span_info("El lánguido olor de su libertinaje me resulta conocido, y puedo detectar su sórdida presencia en los demás."),
+	TRAIT_OUTDOORSMAN = span_warning("No estoy familiarizado con las grandes ciudades, mis habilidades siempre seran mejores en los bosques.")
 ))
 
 // trait accessor defines

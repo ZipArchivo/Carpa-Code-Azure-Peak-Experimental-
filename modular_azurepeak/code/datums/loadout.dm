@@ -197,7 +197,7 @@ GLOBAL_LIST_EMPTY(loadout_items)
 	path = /obj/item/natural/feather
 
 //UTILITY 
-/datum/loadout_item/star
+/*/datum/loadout_item/star
 	name = "Throwing Star"
 	path = /obj/item/throwing_star/ninja
 
@@ -211,7 +211,7 @@ GLOBAL_LIST_EMPTY(loadout_items)
 
 /datum/loadout_item/cloth
 	name = "Cloth"
-	path = /obj/item/natural/cloth
+	path = /obj/item/natural/cloth*/
 
 //carpa (para futuras cosas del lodout)
 

@@ -8,10 +8,10 @@
 	antag_hud_type = ANTAG_HUD_TRAITOR
 	antag_hud_name = "villain"
 	confess_lines = list(
-		"I gave them no time to squeal.",
-		"I shant quit ripping them.",
-		"They deserve to be put at my blade.",
-		"Do what thou wilt shall be the whole of the law.",
+		"No les di tiempo para chillar.",
+		"No dejare de despedazarlos.",
+		"Merecen ser puestos en mi espada.",
+		"Hace lo que quieras sera la ley.",
 	)
 	rogue_enabled = FALSE
 	/// Traits we apply to the owner

@@ -144,7 +144,7 @@ GLOBAL_DATUM_INIT(crewmonitor, /datum/crewmonitor, new)
 					assignment = I.assignment
 					ijob = jobs[I.assignment]
 				else
-					name = "Unknown"
+					name = "Desconocido"
 					assignment = ""
 					ijob = 80
 

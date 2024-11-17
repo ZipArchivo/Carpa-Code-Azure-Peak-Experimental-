@@ -6,7 +6,7 @@
 	total_positions = -1
 	spawn_positions = -1
 	allowed_races = RACES_ALL_KINDS
-	tutorial = "Fleeing misfortune you head your way towards Azure Peak, you're not a soldier or an explorer, but a humble migrant trying to look for a better life, if you get to survive the trip that is."
+	tutorial = "Huyendo de la desdicha, te diriges hacia Azure Peak. No eres un soldado ni un explorador, solo un humilde inmigrante en busca de una vida mejor, si es que logras sobrevivir al viaje."
 
 	outfit = null
 	outfit_female = null

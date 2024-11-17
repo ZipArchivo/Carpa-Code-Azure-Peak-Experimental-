@@ -48,10 +48,10 @@
 	. = ..()
 	if(user.Adjacent(src))
 		if(SSrole_class_handler.bandits_in_round)
-			. += span_bold("I see that bandits are active in the region.")
-			user.playsound_local(user, 'sound/misc/notice (2).ogg', 100, FALSE)
+			. += span_bold("Veo que los bandidos estan activos por la zonaZ.")
+			user.playsound_local(user, 'sound/misc/notice (2).ogg', 100, TRUE)
 		else
-			. += span_bold("There doesn't seem to be any reports of bandit activity.")
+			. += span_bold("No parece haber reportes de bandidos en esta zona.")
 
 /obj/structure/fluff/walldeco/innsign
 	name = "sign"

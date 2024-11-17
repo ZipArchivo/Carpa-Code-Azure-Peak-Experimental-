@@ -5,13 +5,13 @@
 	randomable_dream_xp = FALSE
 
 /datum/skill/magic/holy
-	name = "Miracles"
+	name = "Milagros"
 
 /datum/skill/magic/blood
-	name = "Blood Sorcery"
+	name = "Hemomancia"
 
 /datum/skill/magic/arcane
-	name = "Arcane Magic"
+	name = "Magia Arcana"
 
 /datum/skill/magic/druidic
-	name = "Druidic Trickery"
+	name = "Picardía Druida"

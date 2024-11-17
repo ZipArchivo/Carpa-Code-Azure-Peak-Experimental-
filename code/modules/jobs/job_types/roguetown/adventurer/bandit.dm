@@ -7,7 +7,7 @@
 	spawn_positions = 3
 	antag_job = TRUE
 	allowed_races = RACES_ALL_KINDS
-	tutorial = "Long ago you did a crime worthy of your bounty being hung on the wall outside of the local inn. You now live with your fellow freemen in the bog, and generally get up to no good."
+	tutorial = "Hace mucho cometiste un crimen digno de que tu recompensa estuviera colgada en la pared fuera de la taberna local. Ahora vives junto a tus colegas en el bog, y por lo general no andas en nada bueno."
 
 	outfit = null
 	outfit_female = null

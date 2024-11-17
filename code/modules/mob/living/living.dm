@@ -699,15 +699,15 @@
 	if(stat)
 		return
 	if(pulledby)
-		to_chat(src, span_warning("I'm grabbed!"))
+		to_chat(src, span_warning("Estoy siendo agarrado!"))
 		return
 	if(resting)
 		if(!IsKnockdown() && !IsStun() && !IsParalyzed())
-			src.visible_message(span_info("[src] begins to stand up."))
+			src.visible_message(span_info("[src] comienza a levantarse."))
 			if(move_after(src, 20, target = src))
 				set_resting(FALSE, FALSE)
 		else
-			src.visible_message(span_warning("[src] struggles to stand up."))
+			src.visible_message(span_warning("A [src] le cuesta levantarse ."))
 	else
 		set_resting(TRUE, FALSE)
 
@@ -726,7 +726,7 @@
 			else
 				playsound(src, 'sound/foley/toggleup.ogg', 100, FALSE)
 		else
-			to_chat(src, span_warning("I fail to get up!"))
+			to_chat(src, span_warning("No consigo levantarme!"))
 	update_cone_show()
 
 /mob/living/proc/update_resting()
@@ -2026,7 +2026,7 @@
 		if(ttime < 0)
 			ttime = 0
 	if(m_intent != MOVE_INTENT_SNEAK)
-		visible_message(span_info("[src] looks into the distance."))
+		visible_message(span_info("[src] mira hacia la distancia."))
 	animate(client, pixel_x = world.icon_size*_x, pixel_y = world.icon_size*_y, ttime)
 //	RegisterSignal(src, COMSIG_MOVABLE_PRE_MOVE, PROC_REF(stop_looking))
 	update_cone_show()

@@ -20,7 +20,6 @@
 #define DRINK_FANTASTIC	4
 #define FOOD_AMAZING 5
 
-
 #define FARE_IMPOVERISHED 1
 #define FARE_POOR 2
 #define FARE_NEUTRAL 3
