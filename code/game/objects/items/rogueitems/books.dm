@@ -270,8 +270,8 @@
 
 //player made books
 /obj/item/book/rogue/tales1
-	name = "Assorted Tales From Yester Yils"
-	desc = "By Alamere J Wevensworth"
+	name = "Todo lo que debe saber un Guardabosque"
+	desc = "Autor: Theodal El Primer Guardabosque"
 	icon_state ="book_0"
 	base_icon_state = "book"
 	bookfile = "tales1.json"
