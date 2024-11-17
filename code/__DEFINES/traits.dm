@@ -98,10 +98,10 @@
 #define TRAIT_LEPROSY "Leproso"
 #define TRAIT_NUDE_SLEEPER "Noche Desnuda"
 
-
 GLOBAL_LIST_INIT(roguetraits, list(
 	TRAIT_LEPROSY = span_necrosis("Soy un leproso asqueroso..."),
 	TRAIT_GUARDSMAN = span_info("Estoy atento en mis guardias. En el pueblo de Azure Peak, mis habilidades son mas eficientes, y mis sentidos mas agudos."),
+	TRAIT_KNIGHTSMAN = span_info("Soy un defensor incondicional de la corona. En la fortaleza del palacio, mis habilidades son más nítidas debido a mi rutina y familiaridad."),
 	TRAIT_CHOSEN = "Astrata te ha elegido para presentar su gloria.",
 	TRAIT_WEBWALK = "Puedo moverme libremente en telarañas.",
 	TRAIT_NOSTINK = span_dead("Mi nariz está entumecida ante el olor a descomposición.."),
@@ -169,6 +169,7 @@ GLOBAL_LIST_INIT(roguetraits, list(
 	TRAIT_HORDE = span_info("DE SANGRE Y HUESO. SOY DEVOTO DE GRAGGAR! SIENTO LA FUERZA EN OTROS QUE SON IGUALES."),
 	TRAIT_FORTITUDE = span_info("The typical drain I feel from day to day life is lessened, my athleticism greater."),
 	TRAIT_GUIDANCE = span_info("Arcyne assistance guides my weapons."),
+	TRAIT_DEPRAVED = span_info("El lánguido olor de su libertinaje me resulta conocido, y puedo detectar su sórdida presencia en los demás."),
 	TRAIT_MONTYPYTHON_KING = span_info("'La dama del lago, su brazo envuelto en la seda mas pura y brillante, extrajo la espada excalibur del seno del agua. Simbolizando que la divina providencia me elegia a mi para que empuñase la espada.'"),
 	TRAIT_INCEST = span_love("Las malas lenguas dicen que tu hermana es de poco vestir, especialmente cuando se encuentra ante tu presencia."),
 	TRAIT_DEPRAVED = span_info("El lánguido olor de su libertinaje me resulta conocido, y puedo detectar su sórdida presencia en los demás."),

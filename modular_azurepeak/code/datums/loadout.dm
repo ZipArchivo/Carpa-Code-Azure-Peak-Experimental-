@@ -51,6 +51,10 @@ GLOBAL_LIST_EMPTY(loadout_items)
 	name = "Duelist's Hat"
 	path = /obj/item/clothing/head/roguetown/duelhat
 
+/datum/loadout_item/hood
+	name = "Hood"
+	path = /obj/item/clothing/head/roguetown/roguehood
+
 //CLOAKS
 /datum/loadout_item/tabard
 	name = "Tabard"
@@ -79,7 +83,11 @@ GLOBAL_LIST_EMPTY(loadout_items)
 
 /datum/loadout_item/raincloak
 	name = "Rain Cloak"
-	path = /obj/item/clothing/cloak/raincloak
+	path = /obj/item/clothing/cloak/cloak
+
+/datum/loadout_item/furcloak
+	name = "Fur Cloak"
+	path = /obj/item/clothing/cloak/raincloak/furcloak
 
 /datum/loadout_item/direcloak
 	name = "direbear cloak"
@@ -88,6 +96,7 @@ GLOBAL_LIST_EMPTY(loadout_items)
 /datum/loadout_item/lightdirecloak
 	name = "light direbear cloak"
 	path = /obj/item/clothing/cloak/darkcloak/bear/light
+
 
 //SHOES
 /datum/loadout_item/darkboots
@@ -211,7 +220,7 @@ GLOBAL_LIST_EMPTY(loadout_items)
 
 /datum/loadout_item/cloth
 	name = "Cloth"
-	path = /obj/item/natural/cloth*/
+	path = /obj/item/natural/cloth+/
 
 //carpa (para futuras cosas del lodout)
 

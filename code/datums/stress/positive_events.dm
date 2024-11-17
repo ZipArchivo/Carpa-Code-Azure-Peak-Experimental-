@@ -146,18 +146,19 @@
 /datum/stressevent/noble_lavish_food
 	stressadd = -2
 	desc = list(span_green("Verdaderamente, un festin digno de mi posicion."),span_green("En verdad, un banquete digno de mi rango."),span_green("Realmente, un festín acorde a mi noble estatus."))
+	timer = 30 MINUTES
 
 /datum/stressevent/wine_okay
 	stressadd = -1
-	desc = span_green("That drink was alright.")
+	desc = span_green("Esa bebida fue medianamente satisfactoria.")
 	timer = 10 MINUTES
 
 /datum/stressevent/wine_good
 	stressadd = -2
-	desc = span_green("A decent vintage always goes down easy.")
+	desc = span_green("Un vino digno siempre se desliza con suavidad.")
 	timer = 10 MINUTES
 
 /datum/stressevent/wine_great
 	stressadd = -3
-	desc = span_blue("An absolutely exquisite vintage. Indubitably.")
+	desc = span_blue("Un vino absolutamente exquisito. Indudablemente.")
 	timer = 10 MINUTES
