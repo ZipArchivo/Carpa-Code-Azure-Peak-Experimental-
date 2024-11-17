@@ -2026,7 +2026,7 @@
 		if(ttime < 0)
 			ttime = 0
 	if(m_intent != MOVE_INTENT_SNEAK)
-		visible_message(span_info("[src] looks into the distance."))
+		visible_message(span_info("[src] mira hacia la distancia."))
 	animate(client, pixel_x = world.icon_size*_x, pixel_y = world.icon_size*_y, ttime)
 //	RegisterSignal(src, COMSIG_MOVABLE_PRE_MOVE, PROC_REF(stop_looking))
 	update_cone_show()
