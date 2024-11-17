@@ -149,7 +149,8 @@ GLOBAL_LIST_INIT(roguetown_areas_typecache, typecacheof(/area/rogue/indoors/town
 	droning_sound = 'sound/music/area/decap.ogg'
 	droning_sound_dusk = null
 	droning_sound_night = null
-	
+
+
 /area/rogue/outdoors/mountains/decap/stepbelow
 	name = "mt decapitation inner"
 	icon_state = "decap"
@@ -251,7 +252,7 @@ GLOBAL_LIST_INIT(roguetown_areas_typecache, typecacheof(/area/rogue/indoors/town
 				/mob/living/simple_animal/hostile/retaliate/rogue/bogtroll = 20,
 				/mob/living/simple_animal/hostile/retaliate/rogue/spider = 40,
 				/mob/living/carbon/human/species/goblin/npc/ambush/cave = 30)
-	first_time_text = "EL BOG"
+	first_time_text = "EL TERRORBOG"
 	converted_type = /area/rogue/indoors/shelter/bog
 
 /area/rogue/indoors/shelter/bog
@@ -502,7 +503,7 @@ GLOBAL_LIST_INIT(roguetown_areas_typecache, typecacheof(/area/rogue/indoors/town
 	keep_area = TRUE
 	town_area = TRUE
 
-/arearogue/indoors/town/manor
+/area/rogue/indoors/town/manor
 	name = "Manor"
 	icon_state = "manor"
 	droning_sound = 'sound/music/area/manorgarri.ogg'
@@ -587,6 +588,7 @@ GLOBAL_LIST_INIT(roguetown_areas_typecache, typecacheof(/area/rogue/indoors/town
 	droning_sound_night = null
 	converted_type = /area/rogue/outdoors/exposed/manorgarri
 	keep_area = TRUE
+
 
 /area/rogue/indoors/town/tavern
 	name = "tavern"
@@ -708,11 +710,13 @@ GLOBAL_LIST_INIT(roguetown_areas_typecache, typecacheof(/area/rogue/indoors/town
 	droning_sound_night = 'sound/music/area/sleeping.ogg'
 	soundenv = 17
 	converted_type = /area/rogue/indoors/shelter/town/roofs
+
 /area/rogue/outdoors/town/roofs/keep
 	name = "Keep Rooftops"
 	icon_state = "manor"
 	keep_area = TRUE
 	town_area = TRUE
+
 /area/rogue/indoors/shelter/town/roofs
 	icon_state = "roofs"
 	droning_sound = 'sound/music/area/field.ogg'
