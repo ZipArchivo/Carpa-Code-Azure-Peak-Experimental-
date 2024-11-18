@@ -183,6 +183,12 @@
 /obj/item/roguekey/roomvi/village
 	lockid = "vroomvi"
 
+/obj/item/roguekey/serpienteshq
+	name = "serpientes de cloaca HQ"
+	desc = "La llave al paraiso de los vagabundos."
+	icon_state = "brownkey"
+	lockid = "serpientes"
+
 /obj/item/roguekey/roomi
 	name = "room I key"
 	desc = "The key to the first room."

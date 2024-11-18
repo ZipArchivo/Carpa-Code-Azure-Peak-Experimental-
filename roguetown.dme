@@ -2298,6 +2298,7 @@
 #include "code\modules\jobs\job_types\roguetown\peasants\cook.dm"
 #include "code\modules\jobs\job_types\roguetown\peasants\knavewench.dm"
 #include "code\modules\jobs\job_types\roguetown\peasants\lunatic.dm"
+#include "code\modules\jobs\job_types\roguetown\peasants\serpientes.dm"
 #include "code\modules\jobs\job_types\roguetown\peasants\soilson.dm"
 #include "code\modules\jobs\job_types\roguetown\yeomen\archivist.dm"
 #include "code\modules\jobs\job_types\roguetown\yeomen\artificer.dm"

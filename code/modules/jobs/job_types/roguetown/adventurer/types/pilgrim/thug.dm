@@ -1,4 +1,4 @@
-/datum/advclass/thug
+/*/datum/advclass/thug
 	name = "Thug"
 	tutorial = "Not everyone manages a practical trade, although you found one in distrupting the monopoly of violence the garrison has. The only thing keeping you from being a brigand is the roof over your head and the taxes you pay; ensure it stays that way, bandits typically lose their heads! You find work where people need a strong back and an imposing figure."
 	allowed_sexes = list(MALE, FEMALE)
@@ -33,4 +33,4 @@
 	beltr = /obj/item/rogueweapon/mace/cudgel // It claims to be a weapon for brigands but bandits don't actually use them...
 	H.change_stat("strength", 2)
 	H.change_stat("intelligence", -2)
-	H.change_stat("speed", -1)
+	H.change_stat("speed", -1)*/

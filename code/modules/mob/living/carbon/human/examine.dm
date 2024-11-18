@@ -117,6 +117,8 @@
 			. += span_notice("Un fiel devoto de Graggar, al igual que yo!")
 		else if(HAS_TRAIT(src, TRAIT_DEPRAVED) && HAS_TRAIT(user, TRAIT_DEPRAVED))
 			. += span_notice("Puedo sentir el aura de Baotha en su interior!")
+		else if(HAS_TRAIT(src, TRAIT_SERPIENTES) && HAS_TRAIT(user, TRAIT_SERPIENTES))
+			. += span_notice("Es uno de mis colegas, las Serpientes De Cloaca al poder!")
 
 	if(leprosy == 1)
 		. += span_necrosis("Un leproso...")

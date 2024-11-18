@@ -311,6 +311,10 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark)
 	name = "Soilson"
 	icon_state = "arrow"
 
+/obj/effect/landmark/start/serpientes //THUGS NUEVOS .ZIP
+	name = "Serpiente De Cloaca"
+	icon_state = "arrow"
+
 /obj/effect/landmark/start/beastmonger
 	name = "Butcher"
 	icon_state = "arrow"
