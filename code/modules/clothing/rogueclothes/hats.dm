@@ -934,7 +934,7 @@
 /obj/item/clothing/head/roguetown/helmet/leather/volfhelm
 	slot_flags = ITEM_SLOT_HEAD|ITEM_SLOT_HIP
 	name = "volf helmet"
-	desc = "Bandit initiation rites involve the slaying of a volf."
+	desc = "A leather helmet fashioned from a volf's pelt."
 	body_parts_covered = HEAD|HAIR|EARS
 	icon_state = "volfhead"
 	item_state = "volfhead"
@@ -1046,7 +1046,6 @@
 /obj/item/clothing/head/roguetown/wizhat/random/Initialize()
 	icon_state = pick("wizardhatred", "wizardhatyellow", "wizardhatgreen", "wizardhat")
 	..()
-
 
 /obj/item/clothing/head/roguetown/witchhat
 	name = "witch hat"
@@ -1221,6 +1220,3 @@
 	desc = "A feathered leather hat, to show them all your superiority."
 	icon_state = "duelhat"
 	sewrepair = TRUE
-
-
-

@@ -23,3 +23,11 @@ añadi nuevas carpetas haciendo modular todo lo que se toco de ropa o bueno la m
 son las unicas carpetas nuevas bruh
 
 
+Spells Port 5/11/2024
+code\modules\spells\cantrips.dm
+code\modules\spells\spellscrolls.dm
+
+code\modules\spells\pantheon\divine\necra.dm
+code\modules\spells\pantheon\inhumen\zizo.dm
+code\modules\spells\pantheon\inhumen\matthios.dm
+Azure-Peak\code\datums\gods\patrons\inhumen_pantheon.dm

@@ -769,3 +769,14 @@
 				"eastabove" = 1,
 				"westabove" = 0,
 				)
+
+/obj/item/rogueweapon/sword/long/oathkeeper
+	name = "Espada del Valor, Oathkeeper"
+	desc = "Una lujosa hoja dorada, adornada con un rubi incrustado en la empuñadura. Concedida al Comandante de los Caballeros por su valeroso servicio a la corona"
+	sellprice = 160
+	force = 26
+	force_wielded = 35
+	possible_item_intents = list(/datum/intent/sword/cut/sabre, /datum/intent/sword/thrust, /datum/intent/sword/strike)
+	icon_state = "kingslayer"
+
+

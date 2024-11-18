@@ -42,7 +42,7 @@
 	contains = list(/obj/item/rogue/instrument/flute)
 
 /datum/supply_pack/rogue/luxury/harp
-	name = "Harp"
+	name = "Arpa"
 	cost = 20
 	contains = list(/obj/item/rogue/instrument/harp)
 
@@ -62,9 +62,24 @@
 	contains = list(/obj/item/rogue/instrument/lute)
 
 /datum/supply_pack/rogue/luxury/drum
-	name = "Drum"
+	name = "tambor"
 	cost = 10
 	contains = list(/obj/item/rogue/instrument/drum)
+
+/datum/supply_pack/rogue/luxury/hurdygurdy
+	name = "Zanfona"
+	cost = 30
+	contains = list(/obj/item/rogue/instrument/hurdygurdy)
+
+/datum/supply_pack/rogue/luxury/viola
+	name = "Viola"
+	cost = 30
+	contains = list(/obj/item/rogue/instrument/viola)
+
+/datum/supply_pack/rogue/luxury/vocals
+	name = "Amuleto del Trovador"
+	cost = 30
+	contains = list(/obj/item/rogue/instrument/vocals)
 
 /datum/supply_pack/rogue/luxury/nomag
 	name = "Ring of Null Magic"

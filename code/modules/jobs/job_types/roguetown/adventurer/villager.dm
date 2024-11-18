@@ -6,7 +6,7 @@
 	total_positions = 75
 	spawn_positions = 75
 	allowed_races = RACES_ALL_KINDS
-	tutorial = "Has vivido en este maldito agujero prácticamente toda tu vida. No eres un explorador, desde luego tampoco eres uno de esos guerreros. Solo eres un puto desgraciado que cree que algún día será alguien.."
+	tutorial =  "Has vivido en este maldito agujero prácticamente toda tu vida. No eres un explorador, desde luego tampoco eres uno de esos guerreros. Solo eres un puto desgraciado que cree que algún día será alguien.."
 	advclass_cat_rolls = list(CTAG_TOWNER = 20)
 	outfit = null
 	outfit_female = null

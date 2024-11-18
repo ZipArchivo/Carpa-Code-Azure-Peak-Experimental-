@@ -68,6 +68,7 @@ GLOBAL_LIST_EMPTY(chosen_names)
 	var/pronouns = HE_HIM				// LETHALSTONE EDIT: character's pronouns (well duh)
 	var/voice_type = VOICE_TYPE_MASC	// LETHALSTONE EDIT: the type of soundpack the mob should use
 	var/datum/statpack/statpack	= new /datum/statpack/wildcard/fated // LETHALSTONE EDIT: the statpack we're giving our char instead of racial bonuses
+	var/datum/virtue/virtue = new /datum/virtue/none // LETHALSTONE EDIT: the virtue we get for not picking a statpack
 	var/age = AGE_ADULT						//age of character
 	var/origin = "Default"
 	var/accessory = "Nothing"
@@ -352,6 +353,8 @@ GLOBAL_LIST_EMPTY(chosen_names)
 //				dat += "<a href='?_src_=prefs;preference=toggle_random;random_type=[RANDOM_AGE_ANTAG]'>When Antagonist: [(randomise[RANDOM_AGE_ANTAG]) ? "Yes" : "No"]</A>"
 
 //			dat += "<b><a href='?_src_=prefs;preference=name;task=random'>Random Name</A></b><BR>"
+			dat += "<b>Virtue:</b> <a href='?_src_=prefs;preference=virtue;task=input'>[virtue]</a><BR>"
+			dat += "<b>Vice:</b> <a href='?_src_=prefs;preference=charflaw;task=input'>[charflaw]</a><BR>"
 			dat += "<b>Defecto:</b> <a href='?_src_=prefs;preference=charflaw;task=input'>[charflaw]</a><BR>"
 			var/datum/faith/selected_faith = GLOB.faithlist[selected_patron?.associated_faith]
 			dat += "<b>Fe</b> <a href='?_src_=prefs;preference=faith;task=input'>[selected_faith?.name || "FUCK!"]</a><BR>"
@@ -1499,6 +1502,10 @@ Slots: [job.spawn_positions] [job.round_contrib_points ? "" : ""]</span>
 						ResetJobs()
 						to_chat(user, "<font color='red'>Classes reset.</font>")
 
+				// also, unset our virtue if we're not a virtuous statpack.
+						if (!istype(statpack, /datum/statpack/wildcard/virtuous) && virtue.type != /datum/virtue/none)
+							virtue = new /datum/virtue/none
+							to_chat(user, span_info("Your virtue has been removed due to taking a stat-altering statpack."))
 				// LETHALSTONE EDIT: add statpack selection
 				if ("statpack")
 					var/list/statpacks_available = list()
@@ -1663,6 +1670,25 @@ Slots: [job.spawn_positions] [job.round_contrib_points ? "" : ""]</span>
 				if("update_mutant_colors")
 					update_mutant_colors = !update_mutant_colors
 
+				
+				if("virtue")
+					var/list/virtue_choices = list()
+					for (var/path as anything in GLOB.virtues)
+						var/datum/virtue/virtue = GLOB.virtues[path]
+						if (!virtue.name)
+							continue
+						virtue_choices[virtue.name] = virtue
+					var/result = input(user, "Select a virtue", "Roguetown") as null|anything in virtue_choices
+
+					if (result)
+						var/datum/virtue/virtue_chosen = virtue_choices[result]
+						virtue = virtue_chosen
+						if (virtue.desc)
+							to_chat(user, span_purple(virtue.desc))
+						if (statpack.type != /datum/statpack/wildcard/virtuous)
+							statpack = new /datum/statpack/wildcard/virtuous
+							to_chat(user, span_purple("Your statpack has been set to virtuous (no stats) due to selecting a virtue."))
+							
 				if("charflaw")
 					var/list/coom = GLOB.character_flaws.Copy()
 					var/result = input(user, "Select a flaw", "Roguetown") as null|anything in coom
