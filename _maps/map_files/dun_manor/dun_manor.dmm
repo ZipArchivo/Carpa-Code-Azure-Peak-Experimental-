@@ -47,7 +47,7 @@
 "aaU" = (/obj/effect/decal/cleanable/blood/splatter,/turf/open/floor/rogue/concrete,/area/rogue/under/town/sewer)
 "aaV" = (/obj/structure/table/wood{icon_state = "tablewood1"; dir = 1},/obj/item/reagent_containers/food/snacks/rogue/friedrat,/turf/open/floor/rogue/concrete,/area/rogue/under/town/sewer)
 "aaW" = (/obj/structure/chair/stool/rogue,/turf/open/floor/rogue/naturalstone,/area/rogue/under/town/sewer)
-"aaX" = (/obj/structure/closet/crate/drawer,/obj/item/rogueweapon/huntingknife,/obj/item/grown/log/tree/stake,/obj/item/flashlight/flare/torch,/turf/open/floor/rogue/dirt/road,/area/rogue/under/cave)
+"aaX" = (/obj/structure/closet/crate/drawer,/obj/item/rogueweapon/huntingknife,/obj/item/grown/log/tree/stake,/obj/item/flashlight/flare/torch,/obj/item/rogueweapon/tongs/stone,/obj/item/rogueweapon/tongs,/turf/open/floor/rogue/dirt/road,/area/rogue/under/cave)
 "aaY" = (/obj/structure/chair/stool/rogue,/obj/effect/landmark/start/serpientes,/obj/structure/roguemachine/scomm/l,/turf/open/floor/rogue/naturalstone,/area/rogue/under/cave)
 "aaZ" = (/obj/structure/table/wood/bar{icon_state = "longtable"; dir = 2},/obj/item/mattcoin,/obj/item/storage/belt/rogue/pouch/coins/poor,/obj/item/clothing/mask/cigarette/rollie/nicotine,/obj/item/roguekey/serpienteshq,/obj/item/lockpick,/turf/open/floor/rogue/naturalstone,/area/rogue/under/cave)
 "aba" = (/obj/structure/roguemachine/scomm,/turf/open/floor/rogue/blocks/green,/area/rogue/under/town/sewer)
