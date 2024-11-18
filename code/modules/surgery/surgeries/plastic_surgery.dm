@@ -15,7 +15,7 @@
 	implements = list(
 		TOOL_SCALPEL = 70,
 		TOOL_WIRECUTTER = 50,
-		TOOL_SHARP = 35,
+		TOOL_SHARP = 40,
 	)
 	possible_locs = list(BODY_ZONE_HEAD)
 	time = 6.4 SECONDS

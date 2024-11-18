@@ -36,7 +36,7 @@
 	implements = list(
 		TOOL_HEMOSTAT = 75,
 		TOOL_WIRECUTTER = 60,
-		TOOL_IMPROVISED_HEMOSTAT = 38,
+		TOOL_IMPROVISED_HEMOSTAT = 40,
 	)
 	time = 2.4 SECONDS
 	surgery_flags_blocked = SURGERY_CLAMPED
@@ -65,7 +65,7 @@
 		TOOL_RETRACTOR = 75,
 		TOOL_SCREWDRIVER = 50,
 		TOOL_WIRECUTTER = 35,
-		TOOL_IMPROVISED_RETRACTOR = 38,
+		TOOL_IMPROVISED_RETRACTOR = 40,
 	)
 	time = 2.4 SECONDS
 	surgery_flags_blocked = SURGERY_RETRACTED
@@ -132,7 +132,7 @@
 	implements = list(
 		TOOL_SAW = 80,
 		TOOL_SHOVEL = 50,
-		TOOL_SHARP = 25,
+		TOOL_SHARP = 40,
 	)
 	possible_locs = list(
 		BODY_ZONE_PRECISE_SKULL,

@@ -15,6 +15,7 @@
 		TOOL_SUTURE = 80,
 		TOOL_HEMOSTAT = 60,
 		TOOL_SCREWDRIVER = 50,
+		TOOL_IMPROVISED_HEMOSTAT = 50,
 	)
 	target_mobtypes = list(/mob/living/carbon/human, /mob/living/carbon/monkey)
 	time = 4 SECONDS

@@ -140,6 +140,7 @@
 	twohands_required = FALSE
 	gripped_intents = null
 	slot_flags = ITEM_SLOT_MOUTH|ITEM_SLOT_HIP
+	embedding = list("embedded_fall_chance" = 0)
 
 /obj/item/grown/log/tree/lumber
 	name = "lumber"
