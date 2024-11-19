@@ -1,27 +1,27 @@
-/datum/job/roguetown/serpientes
-	title = "Serpiente De Cloaca"
+/datum/job/roguetown/ratas
+	title = "Rata de Cloaca"
 	flag = VILLAGER
 	department_flag = PEASANTS
 	faction = "Station"
 	total_positions = 4
 	spawn_positions = 4
-	display_order = JDO_SERPIENTE
+	display_order = JDO_RATAS
 	selection_color = JCOLOR_PEASANT
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_ALL_KINDS
 
-	tutorial = "Las Serpientes De Cloaca al poder! Tu y tus colegas habéis descubierto que la violencia, extorsion y el hurto pueden ser cuanto menos lucrativos. Lo único que os separa de los bandidos son los túneles sobre vuestra cabeza, y los impuestos que pagáis. Asegúrate de que siga siendo así, los bandidos suelen ser decapitados! Búscate el pan donde la gente necesite a un subnormal endogámico que tenga pinta de chungo."
+	tutorial = "Las Ratas de Cloaca al poder! Tu y tus colegas habéis descubierto que la violencia, extorsion y el hurto pueden ser cuanto menos lucrativos. Lo único que os separa de los bandidos son los túneles sobre vuestra cabeza, y los impuestos que pagáis. Asegúrate de que siga siendo así, los bandidos suelen ser decapitados! Búscate el pan donde la gente necesite a un subnormal endogámico que tenga pinta de chungo."
 
 
-	f_title = "Serpiente"
-	outfit = /datum/outfit/job/roguetown/serpientes
+	f_title = "Ratas"
+	outfit = /datum/outfit/job/roguetown/ratas
 	display_order = 29
 	min_pq = 3
 	max_pq = null
 	round_contrib_points = 3
-	cmode_music = 'sound/music/combat_serpientes.ogg'
+	cmode_music = 'sound/music/combat_serpientes2.ogg'
 
-/datum/outfit/job/roguetown/serpientes/pre_equip(mob/living/carbon/human/H)
+/datum/outfit/job/roguetown/ratas/pre_equip(mob/living/carbon/human/H)
 	..()
 	H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 3, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/misc/reading, 1, TRUE)
@@ -42,11 +42,11 @@
 	gloves = /obj/item/clothing/gloves/roguetown/fingerless
 	armor = /obj/item/clothing/suit/roguetown/armor/leather/vest/sailor/nightman
 	beltr = /obj/item/rogueweapon/huntingknife/idagger/navaja // It claims to be a weapon for brigands but bandits don't actually use them...
-	beltl = /obj/item/roguekey/serpienteshq
+	beltl = /obj/item/roguekey/ratashq
 	H.change_stat("strength", 2)
 	H.change_stat("intelligence", -2)
 	H.change_stat("speed", -1)
-	ADD_TRAIT(H, TRAIT_SERPIENTES, type)
+	ADD_TRAIT(H, TRAIT_RATAS, type)
 	ADD_TRAIT(H, TRAIT_SEEPRICES_SHITTY, type)
 	ADD_TRAIT(H, TRAIT_NUTCRACKER, type)
 	ADD_TRAIT(H, TRAIT_NOSEGRAB, type)

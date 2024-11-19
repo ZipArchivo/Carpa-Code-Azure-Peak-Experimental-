@@ -275,7 +275,7 @@
 #define JDO_WENCH 27.3
 
 #define JDO_SOILSON 28
-#define JDO_SERPIENTE 29
+#define JDO_RATAS 29
 
 #define JDO_VILLAGER 30
 #define JDO_ADVENTURER 30.1
@@ -345,7 +345,7 @@
 	/datum/job/roguetown/knavewench,\
 	/datum/job/roguetown/lunatic,\
 	/datum/job/roguetown/farmer,\
-	/datum/job/roguetown/serpientes,\
+	/datum/job/roguetown/ratas,\
 	/datum/job/roguetown/orphan,\
 	/datum/job/roguetown/shophand,\
 	/datum/job/roguetown/bapprentice,\

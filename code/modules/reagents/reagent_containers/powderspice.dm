@@ -53,7 +53,7 @@
 	show_when_dead = FALSE
 
 /datum/reagent/druqks/overdose_start(mob/living/M)
-	M.visible_message(span_warning("Blood runs from [M]'s nose."))
+	M.visible_message(span_warning("[M] empieza a sangrar por la nariz."))
 
 /datum/reagent/druqks/on_mob_metabolize(mob/living/M)
 	M.overlay_fullscreen("druqk", /atom/movable/screen/fullscreen/druqks)

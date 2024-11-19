@@ -121,7 +121,7 @@ GLOBAL_LIST_INIT(peasant_positions, list(
 	"Fisher",
 	"Lumberjack",
 	"Towner",
-	"Serpiente De Cloaca",
+	"Rata de Cloaca",
 	"Grabber",
 	"Nightmaster",
 	"Tapster",

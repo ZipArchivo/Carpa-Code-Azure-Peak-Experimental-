@@ -48,7 +48,7 @@
 #define TRAIT_MONTYPYTHON_KING "Elegido Real"
 #define TRAIT_INCEST "Incestuoso"
 #define TRAIT_OUTDOORSMAN "De fuera"
-#define TRAIT_SERPIENTES "Serpiente De Cloaca"
+#define TRAIT_RATAS "Rata de Cloaca"
 
 //Hearthstone port (Tracking)
 #define TRAIT_PERFECT_TRACKER "Rastreador Experimentado" //Will always find any tracks and analyzes them perfectly.
@@ -174,7 +174,7 @@ GLOBAL_LIST_INIT(roguetraits, list(
 	TRAIT_INCEST = span_love("Las malas lenguas dicen que tu hermana es de poco vestir, especialmente cuando se encuentra ante tu presencia."),
 	TRAIT_DEPRAVED = span_info("El lánguido olor de su libertinaje me resulta conocido, y puedo detectar su sórdida presencia en los demás."),
 	TRAIT_OUTDOORSMAN = span_warning("No estoy familiarizado con las grandes ciudades, mis habilidades siempre seran mejores en los bosques."),
-	TRAIT_SERPIENTES = span_info("Las Serpientes De Cloaca al poder! Siempre podre reconocer a otras Serpientes De Cloaca.")
+	TRAIT_RATAS = span_info("Las Ratas de Cloaca al poder! Siempre podre reconocer a otras Ratas de Cloaca.")
 ))
 
 // trait accessor defines

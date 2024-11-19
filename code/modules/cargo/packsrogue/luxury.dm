@@ -8,7 +8,7 @@
 
 /datum/supply_pack/rogue/luxury/sigs
 	name = "Pipe Weed Zig"
-	cost = 3
+	cost = 15
 	contains = list(/obj/item/clothing/mask/cigarette/rollie/nicotine)
 
 /datum/supply_pack/rogue/luxury/tarot_deck
@@ -18,17 +18,17 @@
 
 /datum/supply_pack/rogue/luxury/ozium
 	name = "Ozium"
-	cost = 5
+	cost = 20
 	contains = list(/obj/item/reagent_containers/powder/ozium)
 
 /datum/supply_pack/rogue/luxury/moondust
 	name = "Moon Dust"
-	cost = 10
+	cost = 35
 	contains = list(/obj/item/reagent_containers/powder/moondust)
 
 /datum/supply_pack/rogue/luxury/spice
 	name = "Spice"
-	cost = 30
+	cost = 60
 	contains = list(/obj/item/reagent_containers/powder/spice)
 
 /datum/supply_pack/rogue/luxury/mbox

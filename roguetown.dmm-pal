@@ -9,17 +9,6 @@
 /area/rogue/indoors
 /mob/living/simple_animal/hostile/retaliate/rogue/bigrat
 /obj/item/clothing/mask/cigarette/rollie/nicotine
-/turf/closed/mineral/rogue/bedrock
-/turf/closed/mineral/random/rogue
-/obj/structure/mineral_door/wood/donjon{dir=4; lockid="serpientes"}
-/obj/structure/roguemachine/drugmachine
-/obj/item/reagent_containers/food/snacks/rogue/friedrat
-/turf/closed/wall/mineral/rogue/pipe{icon_state="iron_corner"; dir=8}
-/turf/closed/wall/mineral/rogue/pipe{icon_state="iron_line"; dir=4}
-/turf/open/floor/rogue/dirt/road
-/turf/open/floor/rogue/naturalstone
-/turf/open/floor/rogue/concrete
-/obj/structure/table/wood{icon_state="tablewood1"; dir=1}
-/obj/structure/chair/stool/rogue
-/obj/item/rope/chain
-/obj/item/rogueweapon/huntingknife
+/obj/structure/fluff/walldeco/chains
+/obj/structure/bars
+/obj/structure/mineral_door/bars
