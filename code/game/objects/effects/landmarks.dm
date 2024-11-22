@@ -312,7 +312,19 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark)
 	icon_state = "arrow"
 
 /obj/effect/landmark/start/ratas //THUGS NUEVOS .ZIP
-	name = "Rata de Cloaca"
+	name = "Contramaestre de Cloaca"
+	icon_state = "arrow"
+
+/obj/effect/landmark/start/ratascapitan //THUGS NUEVOS .ZIP CAPITAN
+	name = "Capitan de Cloaca"
+	icon_state = "arrow"
+
+/obj/effect/landmark/start/ratascocinero //THUGS NUEVOS .ZIP COCINERO
+	name = "Cocinero de Cloaca"
+	icon_state = "arrow"
+
+/obj/effect/landmark/start/ratasmatasanos //THUGS NUEVOS .ZIP MATASANOS
+	name = "Matasanos de Cloaca"
 	icon_state = "arrow"
 
 /obj/effect/landmark/start/beastmonger

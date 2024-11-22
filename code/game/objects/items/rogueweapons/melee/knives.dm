@@ -328,3 +328,24 @@
 		attack_verb = list("stubbed", "poked")
 		sharpness = IS_BLUNT
 		wdefense = 2
+
+/obj/item/rogueweapon/huntingknife/idagger/navaja/attack(mob/user)
+    if(user.zone_selected == BODY_ZONE_PRECISE_SKULL)
+        if(!extended)
+            return
+
+        if(!ismob(user))
+            return
+
+        if(ishuman(user))
+            var/mob/living/carbon/human/H = user
+            if(H.head)
+                to_chat(user, span_warning("¡No puedo peinarme con algo puesto encima!"))
+                return
+            
+            if(H == user)
+                user.visible_message(span_notice("[user] se peina con la navaja."))
+                if(do_after(user, 30))
+                    user.visible_message(span_notice("El peinado de [user] se pondría en forma."))
+                    return
+    ..()

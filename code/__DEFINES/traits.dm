@@ -88,7 +88,7 @@
 #define TRAIT_VAMP_DREAMS "vamp_dreams"
 #define TRAIT_LIMPDICK "limp_dick"
 #define TRAIT_SEXPASS "sexpass"
-#define TRAIT_STEELHEARTED "steelhearted" //no bad mood from dismembering or seeing this
+#define TRAIT_STEELHEARTED "Corazon de hierro" //no bad mood from dismembering or seeing this
 #define TRAIT_IWASREVIVED "iwasrevived" //prevents PQ gain from reviving the same person twice
 #define TRAIT_IWASUNZOMBIFIED "iwasunzombified" //prevents PQ gain from curing a zombie twice
 #define TRAIT_IWASHAUNTED "iwashaunted" //prevents spawning a haunt from a decapitated body twice
@@ -174,7 +174,8 @@ GLOBAL_LIST_INIT(roguetraits, list(
 	TRAIT_INCEST = span_love("Las malas lenguas dicen que tu hermana es de poco vestir, especialmente cuando se encuentra ante tu presencia."),
 	TRAIT_DEPRAVED = span_info("El lánguido olor de su libertinaje me resulta conocido, y puedo detectar su sórdida presencia en los demás."),
 	TRAIT_OUTDOORSMAN = span_warning("No estoy familiarizado con las grandes ciudades, mis habilidades siempre seran mejores en los bosques."),
-	TRAIT_RATAS = span_info("Las Ratas de Cloaca al poder! Siempre podre reconocer a otras Ratas de Cloaca.")
+	TRAIT_RATAS = span_info("Las Ratas de Cloaca al poder! Siempre podre reconocer a otras Ratas de Cloaca."),
+	TRAIT_STEELHEARTED = span_info("Llevo tanto tiempo viendo a gente ser desmembrada que ya me da igual.")
 ))
 
 // trait accessor defines

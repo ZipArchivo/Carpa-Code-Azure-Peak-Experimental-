@@ -275,7 +275,10 @@
 #define JDO_WENCH 27.3
 
 #define JDO_SOILSON 28
-#define JDO_RATAS 29
+#define JDO_RATASCAPITAN 29
+#define JDO_RATAS 29.1
+#define JDO_RATASCOCINERO 29.2
+#define JDO_RATASMATASANOS 29.3
 
 #define JDO_VILLAGER 30
 #define JDO_ADVENTURER 30.1
@@ -346,6 +349,9 @@
 	/datum/job/roguetown/lunatic,\
 	/datum/job/roguetown/farmer,\
 	/datum/job/roguetown/ratas,\
+	/datum/job/roguetown/ratascapitan,\
+	/datum/job/roguetown/ratascocinero,\
+	/datum/job/roguetown/ratasmatasanos,\
 	/datum/job/roguetown/orphan,\
 	/datum/job/roguetown/shophand,\
 	/datum/job/roguetown/bapprentice,\
