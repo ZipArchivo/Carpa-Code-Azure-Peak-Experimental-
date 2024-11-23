@@ -297,8 +297,9 @@
 	last_used = 0
 	is_silver = TRUE
 
+//-------------Cambios de Felino----------------
 /obj/item/rogueweapon/huntingknife/idagger/navaja
-	possible_item_intents = list(/datum/intent/dagger/thrust,/datum/intent/dagger/cut,  /datum/intent/dagger/thrust/pick)
+	possible_item_intents = list(INTENT_GENERIC)
 	name = "navaja"
 	desc = "A folding Etruscan knife valued by merchants, mercenaries and peasants for its convenience. It possesses a long hilt, allowing for a sizeable blade with good reach."
 	force = 5
@@ -312,6 +313,7 @@
 	extended = !extended
 	playsound(src.loc, 'sound/blank.ogg', 50, TRUE)
 	if(extended)
+		possible_item_intents = list(/datum/intent/dagger/thrust,/datum/intent/dagger/cut, /datum/intent/dagger/thrust/pick)
 		force = 20
 		wdefense = 6
 		w_class = WEIGHT_CLASS_NORMAL
@@ -320,7 +322,10 @@
 		attack_verb = list("slashed", "stabbed", "sliced", "torn", "ripped", "diced", "cut")
 		sharpness = IS_SHARP
 		playsound(user, 'sound/items/knife_open.ogg', 100, TRUE)
+		user.update_a_intents()
+	
 	else
+		possible_item_intents = list(INTENT_GENERIC)
 		force = 5
 		w_class = WEIGHT_CLASS_SMALL
 		throwforce = 5
@@ -328,24 +333,31 @@
 		attack_verb = list("stubbed", "poked")
 		sharpness = IS_BLUNT
 		wdefense = 2
+		user.update_a_intents()
 
 /obj/item/rogueweapon/huntingknife/idagger/navaja/attack(mob/user)
-    if(user.zone_selected == BODY_ZONE_PRECISE_SKULL)
-        if(!extended)
-            return
+	if(user.zone_selected == BODY_ZONE_PRECISE_SKULL)
 
-        if(!ismob(user))
-            return
+		if(!extended)
+			return
 
-        if(ishuman(user))
-            var/mob/living/carbon/human/H = user
-            if(H.head)
-                to_chat(user, span_warning("¡No puedo peinarme con algo puesto encima!"))
-                return
-            
-            if(H == user)
-                user.visible_message(span_notice("[user] se peina con la navaja."))
-                if(do_after(user, 30))
-                    user.visible_message(span_notice("El peinado de [user] se pondría en forma."))
-                    return
-    ..()
+		if(!ismob(user))
+			return
+
+		if(ishuman(user))
+			var/mob/living/carbon/human/H = user
+			if(H.head)
+				to_chat(user, span_warning("¡No puedo peinarme con algo puesto encima!"))
+				return
+
+			if(H == user)
+				user.visible_message(span_notice("[user] se peina con la navaja."))
+
+				if(do_after(user, 30))
+					user.visible_message(span_notice("El peinado de [user] se pondría en forma."))
+					return
+				
+				else
+					return
+	..()
+//Lo más probable le gane a YandereDev con muchos If.
