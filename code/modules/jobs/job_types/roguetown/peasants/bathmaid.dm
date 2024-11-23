@@ -1,4 +1,4 @@
-/datum/job/roguetown/nightmaiden
+/*/datum/job/roguetown/nightmaiden
 	title = "Bathhouse Attendant"
 	f_title = "Bathhouse Attendant"
 	flag = WENCH
@@ -114,3 +114,4 @@
 			uses -= 1
 			if(uses == 0)
 				qdel(src)
+*/

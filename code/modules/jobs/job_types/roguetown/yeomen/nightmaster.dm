@@ -1,4 +1,4 @@
-/datum/job/roguetown/niteman
+/*/datum/job/roguetown/niteman
 	title = "Bathmaster"
 	flag = NITEMASTER
 	department_flag = YEOMEN
@@ -78,3 +78,4 @@
 	else
 		armor = /obj/item/clothing/suit/roguetown/armor/armordress/alt
 // man este si lo tocaron y lo entiendo, basicamente es un guardaespaldas o algo asi lei en sus logs, igual lo dividi en clases
+*/

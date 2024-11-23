@@ -363,7 +363,6 @@
 
 #define YEOMEN_ROLES \
 	/datum/job/roguetown/woodsman,\
-	/datum/job/roguetown/niteman,\
 	/datum/job/roguetown/archivist,\
 	/datum/job/roguetown/barkeep,\
 	/datum/job/roguetown/armorsmith,\
