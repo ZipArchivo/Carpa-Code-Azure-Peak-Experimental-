@@ -1,10 +1,11 @@
 /datum/job/roguetown/ratascapitan
 	title = "Capitan de Cloaca"
-	flag = VILLAGER
-	department_flag = PEASANTS
+	flag = RATASCAPITAN
+	department_flag = EL_DEN
 	faction = "Station"
 	total_positions = 1
 	spawn_positions = 1
+	selection_color = JCOLOR_EL_DEN
 	display_order = JDO_RATASCAPITAN
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_ALL_KINDS

@@ -159,7 +159,6 @@
 #define GRABBER		(1<<8)
 #define NITEMASTER	(1<<9)
 #define WENCH		(1<<10)
-#define BEGGAR		(1<<11)
 #define ADVENTURER	(1<<12)
 #define PILGRIM		(1<<13)
 #define VILLAGER	(1<<14)
@@ -175,12 +174,11 @@
 #define CHURCHLING	(1<<1)
 #define SQUIRE		(1<<2)
 #define SERVANT		(1<<3)
-#define ORPHAN		(1<<4)
-#define PRINCE		(1<<5)
-#define SHOPHAND	(1<<6)
-#define CLERK 		(1<<7)
-#define MAGEAPPRENTICE	(1<<8)
-#define APOTHECARY	(1<<9)
+#define PRINCE		(1<<4)
+#define SHOPHAND	(1<<5)
+#define CLERK 		(1<<6)
+#define MAGEAPPRENTICE	(1<<7)
+#define APOTHECARY	(1<<8)
 
 #define MERCENARIES		(1<<7)
 
@@ -196,8 +194,17 @@
 #define TRIBALCOOK	(1<<1)
 #define TRIBALGUARD	(1<<2)
 #define TRIBALSMITH	(1<<3)
+//Ah shit here we go again.
+#define EL_DEN		(1<<9)
 
-#define SLOP		(1<<9)
+#define RATASCAPITAN	(1<<0)
+#define RATASCOCINERO	(1<<1)
+#define RATASMATASANOS	(1<<2)
+#define RATAS	(1<<3)
+#define BEGGAR		(1<<4)
+#define ORPHAN		(1<<5)
+//-
+#define SLOP		(1<<10)
 
 #define TESTER		(1<<0)
 #define DEATHKNIGHT (1<<1)
@@ -210,6 +217,7 @@
 #define JCOLOR_YEOMAN "#819e82"
 #define JCOLOR_PEASANT "#b09262"
 #define JCOLOR_MERCENARY "#c86e3a"
+#define JCOLOR_EL_DEN "#f93555"
 
 
 // job display orders //
@@ -275,34 +283,34 @@
 #define JDO_WENCH 27.3
 
 #define JDO_SOILSON 28
+
 #define JDO_RATASCAPITAN 29
 #define JDO_RATAS 29.1
 #define JDO_RATASCOCINERO 29.2
 #define JDO_RATASMATASANOS 29.3
+#define JDO_VAGRANT 29
+#define JDO_ORPHAN 30
 
-#define JDO_VILLAGER 30
-#define JDO_ADVENTURER 30.1
-#define JDO_PILGRIM 30.2
-#define JDO_MIGRANT 32.3
-#define JDO_BANDIT 31.3
+#define JDO_VILLAGER 31
+#define JDO_ADVENTURER 31.1
+#define JDO_PILGRIM 31.2
+#define JDO_MIGRANT 31.3
+#define JDO_BANDIT 32.3
 
-#define JDO_MERCENARY 31
-#define JDO_GRENZELHOFT 31.1
-#define JDO_DESERT_RIDER 31.2
-#define JDO_VET 31.4
+#define JDO_MERCENARY 32
+#define JDO_GRENZELHOFT 32.1
+#define JDO_DESERT_RIDER 32.2
+#define JDO_VET 32.4
 
-#define JDO_VAGRANT 33
-#define JDO_ORPHAN 34
+#define JDO_PRISONERR 33
+#define JDO_PRISONERB 33.1
+#define JDO_HOSTAGE 34.2
+#define JDO_LUNATIC 34.3
 
-#define JDO_PRISONERR 35
-#define JDO_PRISONERB 35.1
-#define JDO_HOSTAGE 35.2
-#define JDO_LUNATIC 35.3
-
-#define JDO_CHIEFTAIN 36
-#define JDO_TRIBALCOOK 37
-#define JDO_TRIBALGUARD 38
-#define JDO_TRIBALSMITH 39
+#define JDO_CHIEFTAIN 35
+#define JDO_TRIBALCOOK 36
+#define JDO_TRIBALGUARD 37
+#define JDO_TRIBALSMITH 38
 
 #define MANOR_ROLES \
 	/datum/job/roguetown/jester,\
@@ -342,16 +350,11 @@
 #define PEASANT_ROLES \
 	/datum/job/roguetown/villager,\
 	/datum/job/roguetown/nightmaiden,\
-	/datum/job/roguetown/beggar,\
 	/datum/job/roguetown/butcher,\
 	/datum/job/roguetown/cook,\
 	/datum/job/roguetown/knavewench,\
 	/datum/job/roguetown/lunatic,\
 	/datum/job/roguetown/farmer,\
-	/datum/job/roguetown/ratas,\
-	/datum/job/roguetown/ratascapitan,\
-	/datum/job/roguetown/ratascocinero,\
-	/datum/job/roguetown/ratasmatasanos,\
 	/datum/job/roguetown/orphan,\
 	/datum/job/roguetown/shophand,\
 	/datum/job/roguetown/bapprentice,\
@@ -372,7 +375,12 @@
 	/datum/job/roguetown/tailor,\
 	/datum/job/roguetown/scribe
 
-
+#define EL_DEN_ROLES \
+	/datum/job/roguetown/ratas,\
+	/datum/job/roguetown/ratascapitan,\
+	/datum/job/roguetown/ratascocinero,\
+	/datum/job/roguetown/ratasmatasanos,\
+	/datum/job/roguetown/beggar,\
 
 #define WANDERER_ROLES \
 	/datum/job/roguetown/pilgrim,\

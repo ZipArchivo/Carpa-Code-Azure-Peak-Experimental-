@@ -1,7 +1,7 @@
 /datum/job/roguetown/ratascocinero
 	title = "Cocinero de Cloaca"
-	flag = VILLAGER
-	department_flag = PEASANTS
+	flag = RATASCOCINERO
+	department_flag = EL_DEN
 	faction = "Station"
 	total_positions = 1
 	spawn_positions = 1

@@ -1,7 +1,7 @@
 /datum/job/roguetown/ratasmatasanos
 	title = "Matasanos de Cloaca"
-	flag = VILLAGER
-	department_flag = PEASANTS
+	flag = RATASMATASANOS
+	department_flag = EL_DEN
 	faction = "Station"
 	total_positions = 1
 	spawn_positions = 1
