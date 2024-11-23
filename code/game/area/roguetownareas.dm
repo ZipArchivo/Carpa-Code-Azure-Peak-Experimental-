@@ -760,6 +760,21 @@ GLOBAL_LIST_INIT(roguetown_areas_typecache, typecacheof(/area/rogue/indoors/town
 	droning_sound_dusk = null
 	droning_sound_night = null
 
+/area/rogue/under/town/den // SEWER RATS RULE, WE'RE THE SEWER RATS, THAT'S US. AND WE RULE.
+	name = "den"
+	icon_state = "den"
+	ambientsounds = AMB_DEN
+	ambientnight = AMB_DEN
+	spookysounds = SPOOKY_RATS
+	spookynight = SPOOKY_RATS
+	droning_sound = 'sound/music/area/ambience_bumtown.ogg'
+	droning_sound_dusk = null
+	droning_sound_night = null
+	ambientrain = RAIN_SEWER
+	soundenv = 21
+	converted_type = /area/rogue/outdoors/exposed/under/sewer
+	first_time_text = "El Den"
+
 // underworld
 /area/rogue/underworld
 	name = "underworld"

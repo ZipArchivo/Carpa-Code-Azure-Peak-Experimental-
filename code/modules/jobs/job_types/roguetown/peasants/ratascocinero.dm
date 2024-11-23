@@ -31,7 +31,8 @@
 	H.mind.adjust_skillrank(/datum/skill/misc/medicine, 1, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/craft/crafting, 2, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/misc/sewing, 1, TRUE)
-	H.mind.adjust_skillrank(/datum/skill/labor/butchering, 3, TRUE)
+	H.mind.adjust_skillrank(/datum/skill/labor/butchering, 4, TRUE)
+	H.mind.adjust_skillrank(/datum/skill/labor/fishing, 3, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/misc/music, 2, TRUE)
 	belt = /obj/item/storage/belt/rogue/leather/black
 	cloak = /obj/item/clothing/cloak/apron/cook

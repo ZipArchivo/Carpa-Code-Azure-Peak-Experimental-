@@ -109,6 +109,7 @@
 		"comunistas": "rebeldes",
 		"andaluces": "tieflings",
 		"zombies": "no muertos",
-		"patriots": "LA LE LI LO LU"
+		"patriots": "LA Li LU LE LO",
+		"damn": "vaya"
     }
 }

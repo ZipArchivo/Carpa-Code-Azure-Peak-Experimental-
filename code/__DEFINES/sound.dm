@@ -134,6 +134,10 @@
 						'sound/ambience/cavewater (2).ogg',\
 						'sound/ambience/cavewater (3).ogg')
 
+#define AMB_DEN list('sound/ambience/cavewater (1).ogg',\
+						'sound/ambience/cavewater (2).ogg',\
+						'sound/ambience/cavewater (3).ogg')
+
 #define AMB_CAVELAVA list('sound/ambience/cavelava (1).ogg',\
 						'sound/ambience/cavelava (2).ogg',\
 						'sound/ambience/cavelava (3).ogg')

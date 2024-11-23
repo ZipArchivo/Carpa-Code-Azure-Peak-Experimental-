@@ -35,7 +35,7 @@
 	head = /obj/item/clothing/head/roguetown/bucklehat
 	belt = /obj/item/storage/belt/rogue/leather/black
 	cloak = /obj/item/clothing/cloak/apron/blacksmith
-	shirt = /obj/item/clothing/under/roguetown/tights/vagrant
+	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/vagrant
 	pants = /obj/item/clothing/under/roguetown/trou
 	shoes = /obj/item/clothing/shoes/roguetown/simpleshoes/buckle
 	backr = /obj/item/storage/backpack/rogue/satchel
