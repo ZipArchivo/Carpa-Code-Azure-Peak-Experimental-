@@ -121,20 +121,24 @@ GLOBAL_LIST_INIT(peasant_positions, list(
 	"Fisher",
 	"Lumberjack",
 	"Towner",
-	"Capitan de Cloaca",
-	"Contramaestre de Cloaca",
-	"Cocinero de Cloaca",
-	"Matasanos de Cloaca",
 	"Grabber",
 	"Nightmaster",
 	"Tapster",
 	"Bathhouse Attendant",
 	"Docker",
 	"Prisoner",
-	"Beggar",
 	"Adventurer",
 	"Pilgrim",
 	"Bandit",
+))
+
+GLOBAL_LIST_INIT(el_den_positions, list(
+	"Capitan de Cloaca",
+	"Contramaestre de Cloaca",
+	"Cocinero de Cloaca",
+	"Matasanos de Cloaca",
+	"Beggar",
+	"Vagabond",
 ))
 
 GLOBAL_LIST_INIT(mercenary_positions, list(
@@ -153,7 +157,6 @@ GLOBAL_LIST_INIT(youngfolk_positions, list(
 	"Churchling",
 	"Servant",
 	"Shophand",
-	"Vagabond",
 ))
 
 GLOBAL_LIST_INIT(allmig_positions, list(
@@ -190,6 +193,7 @@ GLOBAL_LIST_INIT(job_assignment_order, get_job_assignment_order())
 	sorting_order += GLOB.church_positions
 	sorting_order += GLOB.yeoman_positions
 	sorting_order += GLOB.peasant_positions
+	sorting_order += GLOB.el_den_positions
 	sorting_order += GLOB.youngfolk_positions
 	return sorting_order
 

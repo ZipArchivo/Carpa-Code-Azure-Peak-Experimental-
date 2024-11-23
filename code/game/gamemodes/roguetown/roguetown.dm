@@ -320,6 +320,8 @@ var/global/list/roguegamemodes = list("Rebellion", "Vampires and Werewolves", "E
 					blockme = TRUE
 				if(rebelguy.assigned_role in GLOB.yeoman_positions)
 					blockme = TRUE
+				if(rebelguy.assigned_role in GLOB.el_den_positions)
+					blockme = TRUE
 				if(blockme)
 					continue
 				allantags -= rebelguy
