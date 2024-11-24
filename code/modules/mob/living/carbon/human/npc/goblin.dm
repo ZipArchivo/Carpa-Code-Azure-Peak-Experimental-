@@ -13,6 +13,8 @@
 	base_intents = list(INTENT_HELP, INTENT_DISARM, INTENT_GRAB, /datum/intent/unarmed/claw)
 	possible_rmb_intents = list()
 
+	
+
 /mob/living/carbon/human/species/goblin/npc
 	aggressive = 1
 	mode = AI_IDLE
@@ -119,6 +121,10 @@
 		)
 	var/raceicon = "goblin"
 
+	languages = list(
+		/datum/language/orcish
+	)
+
 /datum/species/goblin/regenerate_icons(mob/living/carbon/human/H)
 //	H.cut_overlays()
 	H.icon_state = ""
@@ -214,7 +220,6 @@
 			headdy.icon = 'icons/roguetown/mob/monster/goblins.dmi'
 			headdy.icon_state = "[src.dna.species.id]_head"
 			headdy.sellprice = rand(7,40)
-	src.grant_language(/datum/language/orcish)
 	var/obj/item/organ/eyes/eyes = src.getorganslot(ORGAN_SLOT_EYES)
 	if(eyes)
 		eyes.Remove(src,1)
