@@ -31,6 +31,7 @@
 	H.mind.adjust_skillrank(/datum/skill/misc/sneaking, 3, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/misc/climbing, 2, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/misc/lockpicking, 4, TRUE)
+	H.dna.species.soundpack_m = new /datum/voicepack/male/young
 	belt = /obj/item/storage/belt/rogue/leather/black
 	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/sailor/red
 	pants = /obj/item/clothing/under/roguetown/tights/black
